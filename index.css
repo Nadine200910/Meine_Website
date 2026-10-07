@@ -1,0 +1,182 @@
+body {
+    background-color: rgb(217, 217, 236);
+
+}
+
+p {
+    font-size: 16pt;
+    font-family: cursive;
+    text-align: center;
+}
+
+h4,
+h3,
+h1 {
+    font-family: cursive;
+    text-align: center;
+}
+
+a {
+    margin-inline: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.picture {
+    width: 30%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-self: anchor-center;
+
+}
+
+.picture1 {
+    width: 75%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-self: anchor-center;
+
+}
+
+.picture2 {
+    width: 20%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-self: anchor-center;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #737be9;
+    font-family: cursive;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    font-size: 18pt;
+    overflow: hidden;
+    background-color: #737be9;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 10px;
+    border: 1px solid;
+     font-size: 13pt;
+}
+
+nav ul li a {
+    padding: 10px 18px;
+    border: #000000
+}
+
+
+#textmarker {
+    background-color: #888cc9;
+}
+
+#textmarker1 {
+    background-color: #609fe7;
+}
+
+#textmarker2 {
+    background-color: #4c86c7;
+}
+
+#textmarker3 {
+    background-color: rgb(135, 143, 241);
+}
+
+#textmarker4 {
+    background-color: #70739b;
+}
+
+#textmarker5 {
+    background-color: #616383;
+}
+
+#textmarker6 {
+    background-color: #5d62aa;
+}
+
+#textmarker7 {
+    background-color: #b6b9e9;
+}
+
+#textmarker8 {
+    background-color: #9092a8;
+}
+
+#textmarker9 {
+    background-color: #6c70b1;
+}
+
+#textmarker10 {
+    background-color: #4b4f8f;
+}
+
+#textmarker11 {
+    background-color: #f8f8fc;
+}
+
+.pferde-border {
+    border: 2px dotted rgb(0, 0, 0);
+}
+
+section {
+    display: block;
+}
+
+article {
+    margin: 0;
+    padding: 10 px;
+}
+
+hr {
+    width: 95%;
+    height: 5px;
+    margin: 0 auto;
+    color: rgb(62, 62, 209);
+    background: #8e84e5;
+}
+
+
+.flex-box {
+    display: flex;
+    
+}
+
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-style {
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+}
+
+.überschrift {
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
