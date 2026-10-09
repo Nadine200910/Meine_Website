@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer>
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <div class="überschrift">
+                <li><a href="Sartseite.html" class="active">Home</a></li>
+                <li><a href="ÜberUns.html">Über uns</a></li>
+                <li><a href="Pferde.html">Schulpferde</a></li>
+                <li><a href="Angebote.html">Was wir Anbieten</a></li>
+                <li><a href="Kontakte.html">Kontakte</a></li>
+                <li><a href="Sall.html">Unser Stall</a></li>
+                <li><a href="Rassen.html">Pferderassen</a></li>
+                <li><a href="Taschenrechner.html">Taschenrechner</a></li>
+            </div>
+        </ul>
+    </nav>
+    <h1>Taschenrechner</h1>
+    <div class="display">
+        <div id="inputRechnung">
+            <p id="inputRechnung"></p>
+        </div>
+        <div id="outputRechnung">
+            <p id="outputRechnung"></p>
+        </div>
+        
+    </div>
+    <br>
+    <div class="button1">
+       
+        <div class="buttonSize">
+            <button type="button" id="zahl7">7</button>
+        </div>
+        <div class="buttonSize">
+            <button type="button" id="zahl8">8</button>
+        </div>
+        <div class="buttonSize">
+            <button type="button" id="zahl9">9</button>
+        </div>
+        <div class="buttonSize2">
+            <button type="button" id="zeichenMal"> * </button>
+        </div>
+    
+    
+        
+    </div>
+   
+    <div class="button1">
+        <div class="buttonSize" >
+            <button type="button" id="zahl4">4</button>
+        </div>
+        <div class="buttonSize" >
+            <button type="button" id="zahl5">5</button>
+        </div>
+        <div class="buttonSize">
+            <button type="button" id="zahl6">6</button>
+        </div>
+        <div class="buttonSize2" class="buttonC">
+            <button type="button" id="zeichenGeteilt">/</button>
+        </div>
+
+    </div>
+    <div class="button1">
+        <div class="buttonSize">
+            <button type="button" id="zahl1">1</button>
+        </div>
+        <div class="buttonSize">
+            <button type="button" id="zahl2">2</button>
+        </div>
+        <div class="buttonSize">
+            <button type="button" id="zahl3">3</button>
+        </div>
+        <div class="buttonSize">
+            <button type="button" id="zeichenPlus">+</button>
+        </div>
+    </div>
+    <div class="button1">
+        <div class="buttonSize2">
+            <button type="button" id="zeichenPunkt"> . </button>
+        </div>
+        <div class="buttonSize">
+            <button type="button" id="zahl0">0</button>
+        </div>
+        <div class="buttonSize2">
+            <button type="button" id="zeichenMinus"> - </button>
+        </div>
+        <div class="buttonSize">
+            <button type="button" id="abgeben" onclick="abgeben()">=</button>
+        </div>
+        
+        <div class="buttonSize2">
+            <button type="button" id="clear">C</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakte</title>
     <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer>
+    
+    </script>
 </head>
 
 
@@ -21,11 +24,28 @@
                 <li><a href="Kontakte.html">Kontakte</a></li>
                 <li><a href="Sall.html">Unser Stall</a></li>
                 <li><a href="Rassen.html">Pferderassen</a></li>
+                <li><a href="Taschenrechner.html">Taschenrechner</a></li>
             </div>
         </ul>
 
     </nav>
     <h1>So können sie uns Kontaktieren</h1>
+    <div class="eingabe-feld">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name">
+    </div>
+    <div class="eingabe-feld">
+        <label for="mail">E-Mail:</label>
+        <input type="text" id="mail">
+    </div>
+
+    <div class="eingabe-feld">
+        <button type="button" id="senden" onclick="send()">Senden</button>
+    </div>
+
+    <p id="output"></p>
+
     <h1>Anja Riegger</h1>
     <h3>Telefon mobil:</h3>
     <p>+49 (0) 171 / 480 96 89</p>

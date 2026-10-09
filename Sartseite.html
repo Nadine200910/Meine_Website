@@ -7,29 +7,18 @@
     <title>Brandhof</title>
     <link rel="stylesheet" href="index.css">
     <script>
-        let zahl1 = 4556461;
-        const hallo = "Hallo und Herzlich Wilkommen";
-        var father = 7;
-        let text1 = "Du hast Interesse an Pferden";
-        let text2 = "Du hast keine Interesse an Pferden."
-        let text3 = "Error."
+        let eingabe = window.prompt("Gebe eine Zahl ein:");
+        let zahl = Number(eingabe);
+        parseInt(eingabe, 10)
 
-        console.log(hallo);
-        console.log(zahl1);
-        console.log(father)
-        let eingabewert = 'Ja';
-        let eingabewert2 = 'Nein';
-        let eingabe = window.prompt('Sind sie Pferde Interesiert?  Ja oder Nein', '');
-
-
-        if (eingabe == eingabewert) {
-            alert(text1);
-        }
-        else if (eingabe == eingabewert2) {
-            alert(text2);
+        if (eingabe == zahl) {
+            while (zahl < 10) {
+                console.log(zahl)
+                zahl = zahl + 1
+            }
         }
         else {
-            alert(text3)
+            console.log("Error")
         }
     </script>
 
@@ -48,6 +37,7 @@
                 <li><a href="Kontakte.html">Kontakte</a></li>
                 <li><a href="Sall.html">Unser Stall</a></li>
                 <li><a href="Rassen.html">Pferderassen</a></li>
+                <li><a href="Taschenrechner.html">Taschenrechner</a></li>
             </div>
         </ul>
     </nav>
