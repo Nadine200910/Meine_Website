@@ -1,16 +1,29 @@
 body {
     background-color: rgb(217, 217, 236);
+}
 
+#body {
+    background-color: rgb(217, 217, 236);
 }
 
 p {
     font-size: 15pt;
     font-family: cursive;
     text-align: center;
+    display: flex;
 }
 
+input {
+    font-size: 17pt;
+    font-family: cursive;
+    text-align: center;
+}
+
+h6,
+h5,
 h4,
 h3,
+h2,
 h1 {
     font-family: cursive;
     text-align: center;
@@ -20,6 +33,7 @@ a {
     margin-inline: 0 auto;
     display: flex;
     justify-content: center;
+    color: #000000;
 }
 
 .picture {
@@ -28,6 +42,13 @@ a {
     display: flex;
     text-align: center;
     justify-self: anchor-center;
+    border-radius: 13px;
+}
+
+.picture3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
 }
 
@@ -37,7 +58,7 @@ a {
     display: flex;
     text-align: center;
     justify-self: anchor-center;
-
+    border-radius: 13px;
 }
 
 .picture2 {
@@ -46,7 +67,7 @@ a {
     display: flex;
     text-align: center;
     justify-self: anchor-center;
-
+    border-radius: 13px;
 }
 
 .navbar {
@@ -56,7 +77,6 @@ a {
     padding: 1rem;
     background-color: #737be9;
     font-family: cursive;
-
 }
 
 .nav-links {
@@ -88,53 +108,60 @@ nav ul li a {
     border: #000000
 }
 
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    align-items: center;
+}
 
 #textmarker {
-    background-color: #888cc9;
+    background-color: #b4b9fa;
 }
 
 #textmarker1 {
-    background-color: #609fe7;
+    background-color: #beb9ff;
 }
 
 #textmarker2 {
-    background-color: #4c86c7;
+    background-color: #b4b9fa;
 }
 
 #textmarker3 {
-    background-color: rgb(135, 143, 241);
+    background-color: #beb9ff;
 }
 
 #textmarker4 {
-    background-color: #70739b;
+    background-color: #b4b9fa;
 }
 
 #textmarker5 {
-    background-color: #616383;
+    background-color: #beb9ff;
 }
 
 #textmarker6 {
-    background-color: #5d62aa;
+    background-color: #b4b9fa;
 }
 
 #textmarker7 {
-    background-color: #b6b9e9;
+    background-color: #beb9ff;
 }
 
 #textmarker8 {
-    background-color: #9092a8;
+    background-color: #b4b9fa;
 }
 
 #textmarker9 {
-    background-color: #6c70b1;
+    background-color: #beb9ff;
 }
 
 #textmarker10 {
-    background-color: #4b4f8f;
+    background-color: #b4b9fa;
 }
 
 #textmarker11 {
-    background-color: #f8f8fc;
+    background-color: #beb9ff;
 }
 
 .pferde-border {
@@ -161,6 +188,14 @@ hr {
 
 .flex-box {
     display: flex;
+    justify-content: center;
+}
+
+.flex-box10 {
+    display: flex;
+        flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .flex-reverse {
@@ -171,6 +206,15 @@ hr {
     display: flex;
     justify-content: center;
     font-family: cursive;
+    font-family: cursive;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .überschrift {
@@ -184,31 +228,28 @@ hr {
     display: flex;
     justify-content: center;
     font-family: cursive;
+    font-size: 20px;
 }
 
 button {
-
     font-size: 70px;
     background-color: #c9bef3;
     border: none;
     border-radius: 15px;
-    padding: 10px 1; 
+    padding: 15px;
     margin: 1px;
+    font-family: cursive;
 }
 
 .button1 {
-    padding: 1px;
     display: flex;
     justify-content: center;
     border-radius: 15px;
 }
 
 .buttonSize {
-    padding: 3px 3px;
-}
 
-.buttonSize2 {
-    padding: 4px 5px;
+    flex-wrap: nowrap;
 }
 
 
@@ -223,8 +264,8 @@ button {
 }
 
 .display {
-    width: 480px;
-    height: 100px;
+    width: 400px;
+    height: 135px;
     background-color: rgb(220, 197, 238);
     padding: 10px;
 
@@ -233,6 +274,30 @@ button {
     align-items: center;
     justify-self: center;
     border-radius: 15px;
-
+    font-family: cursive;
 }
 
+#searchInput {
+    width: 14%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#submitButton {
+    font-size: 23px;
+    margin: 10px;
+}
+
+.avatar {
+    --bs-avatar-size: 4.rem;
+}
+
+.avatar-img {
+    border-radius: 20px;
+    max-width: 70px;
+}

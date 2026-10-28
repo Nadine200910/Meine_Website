@@ -5,66 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Über uns</title>
-    <link rel="stylesheet" href="index.css">
-   
-</head>
+   <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+    crossorigin="anonymous"></script>
+    <style>
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
+        #flex-style {
+            border-radius: 18px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            max-width: 40%;
+            border-radius: 18px;
+        }
+
+        .avatar-img {
+            border-radius: 20%;
+            max-width: 70px;
+        }
+    </style>
+</head>
 
 <body>
     <nav class="navbar">
         <ul class="nav-links">
             <div class="überschrift">
+                <span class="avatar">
+                    <img class="avatar-img" src="logo.png">
+                </span>
                 <li><a href="Sartseite.html" class="active">Home</a></li>
-                <li><a href="ÜberUns.html">Über uns</a></li>
-                <li><a href="Pferde.html">Schulpferde</a></li>
-                <li><a href="Angebote.html">Was wir Anbieten</a></li>
+                <li><a href="ÜberUns.html">jetzige Seite</a></li>
+                <li><a href="Pferde.html">Pferdeferde</a></li>
+                <li><a href="Angebote.html">Angebote</a></li>
                 <li><a href="Kontakte.html">Kontakte</a></li>
                 <li><a href="Sall.html">Unser Stall</a></li>
-                <li><a href="Rassen.html">Pferderassen</a></li>
-                <li><a href="Taschenrechner.html">Taschenrechner</a></li>
+                <li><a href="Rassen.html">Rassen</a></li>
+                <li><a href="Grundwissen.html">Grndwissen</a></li>
+                <li><a href="Tunier.html">Tunier</a></li>
+                  <li><a href="Reitabzeichen.html">Abzeichen</a></li>
+                <li><a href="Taschenrechner.html">Rechner</a></li>
+                <li><a href="Punkte.html">Punkte</a></li>
+                <li><a href="ToDoListe.html">To-Do</a></li>
             </div>
         </ul>
     </nav>
+    <p></p>
     <div class="flex-style">
-        <h1>Über uns</h1>
-    </div>
-    <div class="flex-style">
-        <p>Wir sind Anja Riegger und Hartmut Weiss.</p>
-    </div>
-    <div class="flex-style">
-        <h3>Anja Rigger</h3>
-    </div>
-    <div class="flex-style">
-        <h4>Pferdewirtin</h4>
-    </div>
-        <img srcset="Anja.webp" class="picture2">
-        <img srcset="Seaby.jpg" class="picture2">
-    <p>Mein Schwerpunkt ist Reiten, Reittherapeutin mit Schwerpunkt Heilpädagogsiches Reiten und dem Anreiten,
-        Ausbilden und Vorstellen von Jungpferden. Außerdem hab ich die Ausbildung zur Haupt- und Grundschullehrerin.
-        Mein Schwerpunkt liegt im Reitunterricht, besonders auch für Spät- und Wiedereinsteiger und vorsichtige
-        Reiter. Im Tuniersport bin ich mit unseren selbst gezüchteten und ausgebildeten Pferden bis zur Dressurprüfung
-        Kl. M
-        ** erfolgreich.</p>
+        <div class="card" style="max-width: 1040px;">
+            <div class="card-header">
+                <h1> Über uns </h1>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <p>Wir sind Anja Riegger und Hartmut Weiss.</p>
+                </li>
 
+                <li class="list-group-item">
+                    <div class="flex-style">
+                        <div class="picture3" style="width: 950px;">
+                            <img srcset="Anja.webp" class="picture2">
+                            <img srcset="Seaby.jpg" class="picture2">
+                        </div>
+                        <p></p>
+                        <h3>Anja Rigger</h3>
+                        <h4>Pferdewirtin</h4>
+                        <p>Mein Schwerpunkt ist Reiten, Reittherapeutin mit Schwerpunkt
+                            Heilpädagogsiches Reiten und dem Anreiten,
+                            Ausbilden und Vorstellen von Jungpferden. Außerdem hab ich die Ausbildung zur Haupt- und
+                            Grundschullehrerin.
+                            Mein Schwerpunkt liegt im Reitunterricht, besonders auch für Spät- und Wiedereinsteiger
+                            und
+                            vorsichtige
+                            Reiter. Im Tuniersport bin ich mit unseren selbst gezüchteten und ausgebildeten Pferden
+                            bis zur
+                            Dressurprüfung
+                            Kl. M
+                            ** erfolgreich.</p>
+                        <p></p>
+                        <small class="fg-3">19.10.2026</small>
+                    </div>
+                </li>
 
-    <div class="flex-style">
-        <h3>Hartmut Weiss</h3>
+                <li class="list-group-item" class="flex-style">
+                    <div class="flex-style">
+                        <div class="picture3" style="width: 950px;">
+                            <img srcset="HartmutWeiss.jpg" class="picture2">
+                        </div>
+                        <p></p>
+                        <h3>Hartmut Weiss</h3>
+                        <h4>Pferdewirtschaftsmeister</h4>
+                        <p>Ich hab in der Zucht und Haltung eine jahrelange Erfahrung in der
+                            Ausbildung junger Pferde und der
+                            Pferdezucht. Mein Schwerpunkt lag im Anreiten, Ausbilden und Vorstellen von jungen
+                            Pferden, bis
+                            zu
+                            einer schweren Verletzung, durch einen sturz.
+                            Nach mehreren Operationen sitze ich nun wieder im Sattel. Nach ca. 10 Jahre bei Haupt-
+                            und
+                            Landgestüt
+                            Marbach,
+                            wo ich auch meine Ausbildung gemacht habe.</p>
+                        <p></p>
+                        <small class="fg-3">19.10.2026</small>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="flex-style">
-        <h4>Pferdewirtschaftsmeister</h4>
-    </div>
-    <img srcset="HartmutWeiss.jpg" class="picture2">
-    <p>Ich hab in der Zucht und Haltung eine jahrelange Erfahrung in der Ausbildung junger Pferde und der
-        Pferdezucht. Mein Schwerpunkt lag im Anreiten, Ausbilden und Vorstellen von jungen Pferden, bis zu
-        einer schweren Verletzung, durch einen sturz.
-        Nach mehreren Operationen sitze ich nun wieder im Sattel. Nach ca. 10 Jahre bei Haupt- und Landgestüt Marbach,
-        wo ich auch meine Ausbildung gemacht habe. </p>
+</div>
     <p></p>
     <hr>
+    <div class="flex-style">
     <footer>
+        <p></p>
         <p>© 2026 by Nadine S.</p>
     </footer>
-
+    </div>
 </body>
 
 </html>

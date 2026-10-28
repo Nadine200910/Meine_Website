@@ -5,72 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakte</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="script.js" defer>
-    
-    </script>
-</head>
+   <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+    crossorigin="anonymous"></script>
+<script src="Taschenrechner.js" defer>
+</script>
+    <style>
+        button {
+            font-size: 130%;
+            background-color: #c9bef3;
+            border: none;
+            border-radius: 18px;
+            padding: 10px 1;
+            margin: 10px;
+            font-family: cursive;
+        }
 
+        .card {
+            display: flex;
+            align-items: center;
+            max-width: 30%;
+            border-radius: 18px;
+        }
+    </style>
+</head>
 
 <body>
     <nav class="navbar">
-
         <ul class="nav-links">
             <div class="überschrift">
+                <span class="avatar">
+                    <img class="avatar-img" src="logo.png">
+                </span>
                 <li><a href="Sartseite.html" class="active">Home</a></li>
-                <li><a href="ÜberUns.html">Über uns</a></li>
-                <li><a href="Pferde.html">Schulpferde</a></li>
-                <li><a href="Angebote.html">Was wir Anbieten</a></li>
-                <li><a href="Kontakte.html">Kontakte</a></li>
+                <li><a href="ÜberUns.html">Wir</a></li>
+                <li><a href="Pferde.html">Pferde</a></li>
+                <li><a href="Angebote.html">Angebote</a></li>
+                <li><a href="Kontakte.html">jetzige Seite</a></li>
                 <li><a href="Sall.html">Unser Stall</a></li>
-                <li><a href="Rassen.html">Pferderassen</a></li>
-                <li><a href="Taschenrechner.html">Taschenrechner</a></li>
+                <li><a href="Rassen.html">Rassen</a></li>
+                <li><a href="Grundwissen.html">Grndwissen</a></li>
+                <li><a href="Tunier.html">Tunier</a></li>
+                  <li><a href="Reitabzeichen.html">Abzeichen</a></li>
+                <li><a href="Taschenrechner.html">Rechner</a></li>
+                <li><a href="Punkte.html">Punkte</a></li>
+                <li><a href="ToDoListe.html">To-Do</a></li>
             </div>
         </ul>
-
     </nav>
-    <h1>So können sie uns Kontaktieren</h1>
-    <div class="eingabe-feld">
-
-        <label for="name">Name:</label><br>
-        <input type="text" id="name">
+    <p></p>
+    <div class="flex-style">
+        <div class="card" style="max-width: 30%;">
+            <div class="card-header">
+                <h1>So können sie uns Kontaktieren</h1>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="eingabe-feld">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="eingabe-feld">
+                        <label for="mail">E-Mail:</label>
+                        <input type="text" id="mail">
+                    </div>
+                    <div class="eingabe-feld">
+                        <button type="button" id="senden" onclick="send()">Senden</button>
+                    </div>
+                    <p id="output"></p>
+                    <div class="flex-style">
+                    <small class="fg-2">19.10.2026</small>
+                </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="flex-style">
+                        <h1>Anja Riegger</h1>
+                        <h3>Telefon mobil:</h3>
+                        <p>+49 (0) 171 / 480 96 89</p>
+                        <h3>E-Mail:</h3>
+                        <p>info@rieggerweiss.de</p>
+                        <h3>Fax</h3>
+                        <p>+49(0) 7975/919741</p>
+                        <small class="fg-2">19.10.2026</small>
+                    </div>
+                </li>
+                <li class="list-group-item" class="flex-style">
+                    <div class="flex-style">
+                        <h1>Hartmut Weiss</h1>
+                        <h3>Telefon mobil:</h3>
+                        <p>+49 (0) 171 / 683 80 41</p>
+                        <h3>E-Mail:</h3>
+                        <p>info@rieggerweiss.de</p>
+                        <h3>Fax</h3>
+                        <p>+49(0) 7975/919741</p>
+                        <small class="fg-2">19.10.2026</small>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="eingabe-feld">
-        <label for="mail">E-Mail:</label>
-        <input type="text" id="mail">
-    </div>
-
-    <div class="eingabe-feld">
-        <button type="button" id="senden" onclick="send()">Senden</button>
-    </div>
-
-    <p id="output"></p>
-
-    <h1>Anja Riegger</h1>
-    <h3>Telefon mobil:</h3>
-    <p>+49 (0) 171 / 480 96 89</p>
-    <h3>E-Mail:</h3>
-    <p>info@rieggerweiss.de</p>
-    <h3>Fax</h3>
-    <p>+49(0) 7975/919741</p>
-
-    <h1>Hartmut Weiss</h1>
-    <h3>Telefon mobil:</h3>
-    <p>+49 (0) 171 / 683 80 41</p>
-    <h3>E-Mail:</h3>
-    <p>info@rieggerweiss.de</p>
-    <h3>Fax</h3>
-    <p>+49(0) 7975/919741</p>
-
-
     <p></p>
     <hr>
-    <footer>
-        <p>© 2026 by Nadine S.</p>
-    </footer>
-
-
-
+    <div class="flex-style">
+        <footer>
+            <p></p>
+            <p>© 2026 by Nadine S.</p>
+        </footer>
+    </div>
 </body>
 
 </html>

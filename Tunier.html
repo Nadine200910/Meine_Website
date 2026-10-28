@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunier</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <style>
+        button {
+            font-size: 20px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            border-radius: 18px;
+            flex-direction: column;
+            width: 1040px;
+        }
+
+        input {
+            border-radius: 18px;
+        }
+
+        .eingabe-feld {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <div class="überschrift">
+                <li><a href="Sartseite.html" class="active">Home</a></li>
+                <li><a href="ÜberUns.html">Wir</a></li>
+                <li><a href="Pferde.html">Pferde</a></li>
+                <li><a href="Angebote.html">Angebote</a></li>
+                <li><a href="Kontakte.html">Kontakte</a></li>
+                <li><a href="Sall.html">Unser Stall</a></li>
+                <li><a href="Rassen.html">Rassen</a></li>
+                <li><a href="Grundwissen.html">Grndwissen</a></li>
+                <li><a href="Tunier.html">jetzige Seite</a></li>
+                <li><a href="Reitabzeichen.html">Abzeichen</a></li>
+                <li><a href="Taschenrechner.html">Rechner</a></li>
+                <li><a href="Punkte.html">Punkte</a></li>
+                <li><a href="ToDoListe.html">To-Do</a></li>
+            </div>
+        </ul>
+    </nav>
+    <p></p>
+    <h1>Alles übers Tunier</h1>
+     <search class="search-container">
+        <form action="./search/"></form>
+        <input type="search" id="searchInput" placeholder="Nach Pferd suchen">
+        <button type="suchen" id="suchenButton">Suchen</button>
+    </search>
+    <ul id="itemList">
+        <div class="flex-style">
+            <div class="card card-body" id="tunierkleidung" style="max-width: 1040px;">
+                <h1>Tunierkleidung</h1>
+                <div class="eingabe-feld" style="max-width: 1040px;">
+                    <p></p>
+                    <h4>Was man zum Anziehen braucht:</h4>
+                    <p>- Turnierjacket (Turnierfrack)</p>
+                    <p>- Tuniershirt</p>
+                    <p>- eine weiße Tunierreithose</p>
+                    <p>- einen Helm</p>
+                    <p>- Stiefel (Oder Stiefeletten mit Chaps)</p>
+                    <p>- Reitsocken</p>
+                    <p>- weiße Handschuhe</p>
+                    <p>- Sporen (falls erlaubt und sinnvoll)</p>
+                </div>
+                <small class="fg-3">23.10.2026</small>
+            </div>
+            <div class="card card-body" id="ausrüstung" style="max-width: 1040px;">
+                <h1>Ausrüstung fürs Pferd</h1>
+                <div class="eingabe-feld" style="max-width: 1040px;">
+                    <p></p>
+                    <h4>Pflege:</h4>
+                    <p>- sauber geputzt</p>
+                    <p>- Mähne ordentlich eingeflochten (Dressur)</p>
+                    <p>- Schweif sauber</p>
+                    <h4>Ausrüstung:</h4>
+                    <p>- geputzter Sattel</p>
+                    <p>- geputzte Trense</p>
+                    <p>- Sartnummer</p>
+                    <p>- weiße Schabracke oder Turnierschabracke</p>
+                    <p>- Gamaschen für das Abreiten (je nach Disziplin)</p>
+                </div>
+                <small class="fg-3">23.10.2026</small>
+            </div>
+            <div class="card card-body" id="außerdem" style="max-width: 1040px;">
+                <h1>Was man zusätzlich mitnehmen sollte</h1>
+                <div class="eingabe-feld" style="max-width: 1040px;">
+                    <p>- Pferdepass (sehr wichtig!)</p>
+                    <p>- Impfpass bzw. eingetragene Impfungen</p>
+                    <p>- Ersatzzügel</p>
+                    <p>- Halfter und Srick</p>
+                    <p>- Puzkasten (Hufeauskratzer)</p>
+                    <p>- Wasser und Futter</p>
+                    <p>- Erste-Hilfe-Set</p>
+                    <p>- Tunierunterlagen</p>
+                </div>
+                <small class="fg-3">23.10.2026</small>
+            </div>
+            <div class="card card-body" id="dressur" style="max-width: 1040px;">
+                <h1>Dressurklassen</h1>
+                <div class="eingabe-feld" style="max-width: 1040px;">
+                    <h3>Klasse E:</h3>
+                    <p>Was man können muss:</p>
+                    <p>• Sicherer, ausbalancierter Sitz in allen drei Grundgangarten.</p>
+                    <p>• Einfache Hufschlagfiguren reiten (z. B. ganze Bahn, Zirkel, aus der Bahn wechseln).</p>
+                    <p>• Richtige Hilfengebung für Übergänge (z. B. Trab-Galopp).</p>
+                    <h3>Klasse A*:</h3>
+                    <p>Was man können muss:</p>
+                    <p>Viereck verkleinern und vergrößern, Überstreichen im Galopp, einfache Übergänge.</p>
+                    <h3>Klasse A**:</h3>
+                    <p>Was man können muss:</p>
+                    <p>Erste Tritte verlängern (Mitteltrap/-galoppansätze), Rückwärtsrichten.</p>
+                    <h3>Klasse L*:</h3>
+                    <p>Was man können muss:</p>
+                    <p>Außengalopp, Kurzkehrtwendung, deutliche Tempounterschiede (Mitteltrab/Mittelgalopp).</p>
+                    <h3>Klasse L**:</h3>
+                    <p>Was man können muss:</p>
+                    <p>Einfache Galoppwechsel, Traversalen (Seitengänge) im Trab.</p>
+                    <h3>Klasse M*:</h3>
+                    <p>Was man können muss:</p>
+                    <p>Fliegende Galoppwechsel, Schulterherein und Traversalen im Trab und Galopp.</p>
+                    <h3>Klasse M**:</h3>
+                    <p>Was man können muss:</p>
+                    <p>Verstärkter Schritt, Trab und Galopp. Erste schwere Lektionen wie halbe Pirouetten im Galopp und
+                        fliegende Wechsel in Serie (z. B. alle 3 oder 4 Sprünge).</p>
+                    <h3>Klasse S*:</h3>
+                    <p>Was man können muss:</p>
+                    <p>Sichere fliegende Galoppwechsel in Serie (3er- und 4er-Takt), Galopppirouetten, sehr hohe
+                        Versammlung in allen Gangarten.</p>
+                    <h3>Klasse S**:</h3>
+                    <p>Was man können muss:</p>
+                    <p>Serienwechsel im 2er-Takt (alle zwei Galoppsprünge), extrem präzise und zentrierte
+                        Galopppirouetten.</p>
+                    <h3>Klasse S***:</h3>
+                    <p>Was man können muss:</p>
+                    <p>(Traben auf der Stelle) und Passage (ein stark verzögerter, schwebender Trab), fliegende
+                        Galoppwechsel von Sprung zu Sprung (Einerwechsel / "Tempi changes").</p>
+                    <h3>Klasse S****/***** (Sehr selten):</h3>
+                    <p>Was man können muss:</p>
+                    <p>Hierbei handelt es sich um absolute Spitzenprüfungen wie den echten Grand Prix Special oder
+                        den Grand Prix Freestyle auf Fünf-Sterne-Niveau (z. B. beim CHIO Aachen), bei denen die
+                        fehlerfreie Ausführung der schwersten Lektionen in maximaler Perfektion verlangt wird.</p>
+
+                </div>
+                <small class="fg-3">23.10.2026</small>
+            </div>
+        </div>
+        </div>
+    </ul>
+    <p></p>
+    <hr>
+    <div class="flex-style">
+        <footer>
+            <P></P>
+            <p>© 2026 by Nadine S.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

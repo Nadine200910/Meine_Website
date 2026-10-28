@@ -6,79 +6,480 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pferderassen</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <style>
+        button {
+            font-size: 27px;
+        }
 
+        .card {
+            display: flex;
+            align-items: center;
+            max-width: 35%;
+            border-radius: 18px;
+            flex-direction: column;
+            border-radius: 17px;
+        }
+
+        .card-body {
+            border-radius: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            border-radius: 17px;
+        }
+
+        input {
+            border-radius: 13px;
+
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar">
-
         <ul class="nav-links">
             <div class="überschrift">
+                <span class="avatar">
+                    <img class="avatar-img" src="logo.png">
+                </span>
                 <li><a href="Sartseite.html" class="active">Home</a></li>
-                <li><a href="ÜberUns.html">Über uns</a></li>
-                <li><a href="Pferde.html">Schulpferde</a></li>
-                <li><a href="Angebote.html">Was wir Anbieten</a></li>
+                <li><a href="ÜberUns.html">Wir</a></li>
+                <li><a href="Pferde.html">Pferde</a></li>
+                <li><a href="Angebote.html">Angebote</a></li>
                 <li><a href="Kontakte.html">Kontakte</a></li>
                 <li><a href="Sall.html">Unser Stall</a></li>
-                <li><a href="Rassen.html">Pferderassen</a></li>
-                <li><a href="Taschenrechner.html">Taschenrechner</a></li>
+                <li><a href="Rassen.html">jetzige Seite</a></li>
+                <li><a href="Grundwissen.html">Grndwissen</a></li>
+                <li><a href="Tunier.html">Tunier</a></li>
+                  <li><a href="Reitabzeichen.html">Abzeichen</a></li>
+                <li><a href="Taschenrechner.html">Rechner</a></li>
+                <li><a href="Punkte.html">Punkte</a></li>
+                <li><a href="ToDoListe.html">To-Do</a></li>
             </div>
         </ul>
-
     </nav>
-
-
-    <h1>Pferderassen</h1>
-    <p>Wir Züchten am meisten schecken Trakener. Jedes Jahr machen wir auch bei den Fohlen des Zuchtbezirks mit. Bei uns
-        haben auch schon die ein oder anderen gewonnen und zum Beispiel ist unser Spekulatius das Fohlenfrühling 2026.
-    </p>
-
-
-    <h3>Trakener</h3>
-
-    <div class="flex-box">
-        <img srcset="Trakener.jpg" class="picture">
-        <p>Trakehner sind edle, ausdauernde und extrem menschenbezogene Warmblutpferde mit einem starken und
-            intelligenten
-            Charakter. Sie gelten als die älteste deutsche Reitpferderasse und sind vor allem für ihre Vielseitigkeit im
-            Sport bekannt. </p>
-    </div>
-
-    <h3>Oldenburger</h3>
-    <div class="flex-box flex-reverse">
-        <img srcset="Oldenburger.jpg" class="picture">
-        <p>Der Oldenburger ist ein elegantes, kräftiges deutsches Warmblut .Er hat
-            einen athletischen Körperbau, einen edlen Kopf und kommt in allen Grundfarben vor. Oldenburger sind
-            ruhig,
-            nervenstark, freundlich und sehr leistungsbereit. Ihre taktklaren, schwungvollen Bewegungen machen sie
-            zu
-            hervorragenden Pferden für Dressur, Springen, Vielseitigkeit und den gehobenen Freizeitbereich.</p>
-    </div>
-    <h3>Hannoveraner</h3>
-
-    <div class="flex-box">
-
-        <img srcset="hanoverian.jpg" class="picture">
-
-        <p>Der Hannoveraner ist ein edles, athletisches Warmblut mit kräftigem Körperbau, trockenem Kopf,
-            langem Hals und schwungvollen, raumgreifenden Gängen. Er gilt als leistungsbereit, nervenstark,
-            freundlich
-            und
-            ist ein Top-Pferd für Dressur, Springen und Vielseitigkeit.</p>
-    </div>
-
-    <h3>Deutsches Reitpony</h3>
-
-    <div class="flex-box flex-reverse">
-
-        <img srcset="Deutsches_Reitpony.jpg" class="picture">
-
-        <p>Der Hannoveraner ist ein edles, athletisches Warmblut mit kräftigem Körperbau, trockenem Kopf,
-            langem Hals und schwungvollen, raumgreifenden Gängen. Er gilt als leistungsbereit, nervenstark, freundlich
-            und
-            ist ein Top-Pferd für Dressur, Springen und Vielseitigkeit.</p>
-
-    </div>
+     <form action="./search/"></form>
+        <input type="search" id="searchInput" placeholder="Nach Pferd suchen">
+        <button type="suchen" id="suchenButton">Suchen</button>
+    </search>
+    <ul id="itemList">
+        <div class="card card-body" style="max-width: 42%;">
+            <h1>Pferderassen</h1>
+            <p class="card-text"> Wir Züchten am meisten schecken Trakener. Jedes Jahr machen wir auch bei den Fohlen
+                des
+                Zuchtbezirks mit. Bei
+                uns
+                haben auch schon die ein oder anderen gewonnen und zum Beispiel ist unser Spekulatius das Fohlenfrühling
+                2026.</p>
+        </div>
+        <li class="item" id="trakener">
+            <div class="flex-box">
+                <div class="card card-row" style="max-width: 42%;">
+                    <div class="card-body"></div>
+                    <img src="Trakener.jpg" class="card-img-start" style="width: 98%;">
+                    <p></p>
+                    <h4 class="card-title">Trakener</h4>
+                    <p class="card-text">Trakehner sind elegante, leistungsbereite und sehr menschenbezogene
+                        Warmblutpferde. Sie zeichnen sich
+                        durch
+                        ihren edlen Körperbau, ihre ausdrucksvollen Bewegungen und ihre hohe Ausdauer aus. Ihr
+                        Charakter
+                        gilt als
+                        intelligent, sensibel und lernwillig, weshalb sie eine enge Bindung zu ihrem Reiter
+                        aufbauen.
+                        Gleichzeitig
+                        besitzen sie Temperament und einen starken Willen, was eine einfühlsame und konsequente
+                        Ausbildung
+                        erfordert. Als älteste deutsche Reitpferderasse überzeugen Trakehner durch ihre
+                        Vielseitigkeit. Sie
+                        werden
+                        erfolgreich im Dressur-, Spring- und Vielseitigkeitssport eingesetzt. Dank ihrer
+                        Leistungsbereitschaft,
+                        Ausdauer und Eleganz eignen sie sich sowohl für den anspruchsvollen Turniersport als auch
+                        für
+                        ambitionierte
+                        Freizeitreiter. Ihre Kombination aus Athletik, Intelligenz und Treue macht sie zu einer der
+                        angesehensten
+                        Pferderassen der Welt.</p>
+                    <button class="btn-solid theme-primary" type="button" data-bs-toggle="drawer"
+                        data-bs-target="#drawerTranslucent" aria-controls="drawerTranslucent">
+                        Unsere Hengte
+                    </button>
+                    <dialog class="drawer drawer-start drawer-translucent" tabindex="-1" id="drawerTranslucent"
+                        aria-labelledby="drawerTranslucentLabel">
+                        <div class="drawer-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="drawer"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="drawer-body">
+                            <h3>Unsere zwei Trakener hengste</h3>
+                            <p>Wir haben zwei tolle Hengste, Sie sind von den allermeiste Fohlen die Väter. Sie
+                                sind Trakener und Deutsches Edelblutpferd. Das auf dem Beispielbild ist Roter Milan ein
+                                Hengst aus eigener Zucht. Er läuft in der Dressur Klasse L, in der Vielseitigkeit Klasse
+                                A/L
+                                und im Springen auch Klasse A/L. Er wurde auch zum Bundeschampionat 2026 qualifiziert.
+                            </p>
+                            <p>Unser
+                                zweiter Hengst ist Ghost of Manitu RW, er hat auch einen einen hohen Edelblutanteil. Er
+                                ist
+                                Württemberger Hengst, Jahrgang 2015 und er ist ein gekörter Hengst, wurde 2017 als
+                                Körungssieger und Prämienhengst beim VZAP ausgezeichnet und 2018 als Prämienhengst beim
+                                ZSAA. Kurz zusammengefasst ist er ein mehrfach prämierter, gekörter Zuchthengst mit
+                                Ausrichtung
+                                auf Dressur und Springen.</p>
+                        </div>
+                    </dialog>
+                    <p></p>
+                    <div class="flex-box">
+                        <small class="fg-3">16.10.2026</small>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+            </div>
+        </li>
+        <li class="item" id="oldenburger">
+            <div class="flex-box">
+                <div class="card card-row" style="max-width: 42%;">
+                    <div class="card-body">
+                        <img src="Oldenburger.jpg" class="card-img-start" style="max-width: 98%;">
+                        <p></p>
+                        <h4 class="card-title">Oldenburger</h4>
+                        <p class="card-text">Oldenburger sind elegante, kräftige und vielseitige deutsche
+                            Warmblutpferde. Sie besitzen einen
+                            harmonischen,
+                            athletischen Körperbau mit kräftiger Muskulatur, einen edlen Kopf und lange, leistungsfähige
+                            Beine.
+                            Die
+                            Rasse kommt in allen Grundfarben vor und vereint Kraft, Eleganz und Bewegungsqualität.
+                            Charakterlich
+                            gelten
+                            Oldenburger als ruhig, nervenstark, freundlich und menschenbezogen. Sie sind
+                            lernwillig, zuverlässig und arbeiten gerne mit ihrem Reiter zusammen. Durch ihr
+                            ausgeglichenes Wesen
+                            eignen
+                            sie sich sowohl für erfahrene Reiter als auch für ambitionierte Freizeitreiter. Besonders
+                            geschätzt
+                            werden
+                            ihre taktklaren, schwungvollen und ausdrucksstarken Bewegungen. Dadurch sind sie
+                            hervorragend für den Dressursport geeignet, überzeugen aber auch im Springen, in der
+                            Vielseitigkeit
+                            und im
+                            gehobenen Freizeitbereich. Dank ihrer Leistungsbereitschaft, ihres Talents und ihres
+                            ausgeglichenen
+                            Charakters gehören Oldenburger zu den erfolgreichsten und beliebtesten Sportpferderassen der
+                            Welt.</p>
+                        <div class="flex-box">
+                            <small class="fg-3">16.10.2026</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="item" id="hannoveraner">
+            <div class="flex-box">
+                <div class="card card-row" style="max-width: 42%;">
+                    <div class="card-body">
+                        <img src="hanoverian.jpg" class="card-img-start" style="max-width: 98%;">
+                        <p></p>
+                        <h4 class="card-title">Hannoveraner</h4>
+                        <p class="card-text">Hannoveraner sind edle, athletische und leistungsstarke Warmblutpferde, die
+                            zu den bekanntesten Sportpferderassen der Welt gehören. Sie besitzen einen kräftigen,
+                            harmonischen Körperbau, einen trockenen und ausdrucksvollen Kopf, einen langen Hals sowie
+                            starke Beine. Besonders auffällig sind ihre schwungvollen, raumgreifenden und elastischen
+                            Bewegungen, die ihnen eine elegante Erscheinung verleihen. Im Charakter gelten Hannoveraner
+                            als freundlich, zuverlässig und nervenstark. Sie sind ausgeglichen, lernwillig und arbeiten
+                            motiviert mit ihrem Reiter zusammen. Durch ihr angenehmes Temperament eignen sie sich sowohl
+                            für den ambitionierten Turniersport als auch für engagierte Freizeitreiter. Dank ihrer hohen
+                            Leistungsbereitschaft, ihrer Athletik und ihrer vielseitigen Talente sind Hannoveraner
+                            besonders erfolgreich in der Dressur, im Springen und in der Vielseitigkeit. Ihre
+                            Kombination aus Kraft, Eleganz und Charakter macht sie zu einer der beliebtesten und
+                            erfolgreichsten Sportpferderassen weltweit.</p>
+                        <div class="flex-box">
+                            <small class="fg-3">16.10.2026</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="item" id="holsteiner">
+            <div class="flex-box">
+                <div class="card card-row" style="max-width: 42%;">
+                    <div class="card-body">
+                        <img src="Hollsteiner.jpg" class="card-img-start" style="width: 98%;">
+                        <p></p>
+                        <h4 class="card-title">Holsteiner</h4>
+                        <p class="card-text">Holsteiner sind elegante, leistungsstarke und vielseitige Warmblutpferde,
+                            die ursprünglich aus Schleswig-Holstein stammen. Sie besitzen einen kräftigen, harmonischen
+                            Körperbau mit edlem Kopf, langem Hals und einer gut ausgeprägten Muskulatur. Durch ihre
+                            Größe, ihre Ausstrahlung und ihre athletische Erscheinung zählen sie zu den bekanntesten
+                            Sportpferderassen der Welt. Charakterlich gelten Holsteiner als intelligent, mutig und
+                            zuverlässig. Sie sind leistungsbereit, lernfähig und zeigen eine enge Bindung zu ihren
+                            Reitern. Gleichzeitig verfügen sie über ein ausgeglichenes Temperament, das sie sowohl für
+                            ambitionierte Sportreiter als auch für erfahrene Freizeitreiter interessant macht. Besonders
+                            bekannt sind Holsteiner für ihre hervorragenden Fähigkeiten im Springsport, wo sie durch
+                            Kraft, Schnelligkeit und großes Sprungvermögen überzeugen. Auch in der Dressur und
+                            Vielseitigkeit erzielen sie regelmäßig erfolgreiche Ergebnisse. Ihre Kombination aus Stärke,
+                            Eleganz, Leistungsbereitschaft und gutem Charakter macht die Holsteiner zu einer der
+                            erfolgreichsten und beliebtesten Pferderassen im internationalen Reitsport.</p>
+                        <div class="flex-box">
+                            <small class="fg-3">16.10.2026</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="item" id="friese">
+            <div class="flex-box">
+                <div class="card card-row" style="max-width: 42%;">
+                    <div class="card-body">
+                        <img src="Friese.jpeg" class="card-img-start" style="max-width: 98%;">
+                        <p></p>
+                        <h4 class="card-title">Friese</h4>
+                        <p class="card-text">Friesen sind elegante, kraftvolle und ausdrucksstarke Pferde, die
+                            ursprünglich aus der niederländischen Provinz Friesland stammen. Sie besitzen einen
+                            harmonischen Körperbau mit kräftiger Muskulatur, einem edlen Kopf und einer hoch getragenen,
+                            geschwungenen Halsung. Besonders auffällig sind ihre meist tiefschwarze Fellfarbe, die
+                            lange, wallende Mähne sowie der üppige Schweif und Behang an den Beinen. Charakterlich
+                            gelten Friesen als freundlich, menschenbezogen und zuverlässig. Sie sind lernwillig,
+                            aufmerksam und verfügen über ein ausgeglichenes Temperament, wodurch sie sowohl bei
+                            Freizeitreitern als auch im sportlichen Bereich geschätzt werden. Gleichzeitig zeigen sie
+                            eine hohe Arbeitsbereitschaft und eine enge Bindung zu ihrem Menschen. Durch ihre
+                            raumgreifenden, ausdrucksstarken Bewegungen eignen sich Friesen besonders für die Dressur,
+                            das Fahren und verschiedene Show- und Freizeitdisziplinen. Ihre Kombination aus Eleganz,
+                            Stärke und gutem Charakter macht sie zu einer der beliebtesten und beeindruckendsten
+                            Pferderassen Europas.</p>
+                        <div class="flex-box">
+                            <small class="fg-3">16.10.2026</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="item" id="deutsches_reitpony">
+            <div class="flex-box">
+                <div class="card card-row" style="max-width: 42%;">
+                    <div class="card-body">
+                        <img src="Deutsches_Reitpony.jpg" class="card-img-start" style="max-width: 98%;">
+                        <p></p>
+                        <h4 class="card-title">Deutsches Reitpony</h4>
+                        <p class="card-text">Deutsches Reitpony sind vielseitige, elegante und leistungsstarke Ponys,
+                            die speziell als Sport- und Freizeitpartner gezüchtet wurden. Sie besitzen einen
+                            harmonischen, sportlichen Körperbau mit edlem Kopf, langem Hals und gut bemuskeltem Rücken.
+                            Trotz ihrer Ponygröße wirken sie oft wie kleine Warmblutpferde und überzeugen durch ihre
+                            ansprechende Ausstrahlung. Charakterlich gelten Deutsche Reitponys als freundlich,
+                            intelligent und menschenbezogen. Sie sind lernwillig, zuverlässig und besitzen ein
+                            ausgeglichenes Temperament, wodurch sie besonders bei Kindern und Jugendlichen beliebt sind.
+                            Gleichzeitig zeigen sie viel Leistungsbereitschaft und Freude an der Arbeit. Durch ihre
+                            schwungvollen Bewegungen, ihre Athletik und ihre Vielseitigkeit eignen sich Deutsche
+                            Reitponys hervorragend für Dressur, Springen und Vielseitigkeit. Sie sind sowohl im
+                            Turniersport als auch im Freizeitbereich erfolgreiche und treue Partner. Ihre Kombination
+                            aus Eleganz, Leistungsfähigkeit und gutem Charakter macht sie zu einer der beliebtesten
+                            Ponyrassen Europas.</p>
+                        <div class="flex-box">
+                            <small class="fg-3">16.10.2026</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="item" id="shetlandpony">
+            <div class="flex-box">
+                <div class="card card-row" style="max-width: 42%;">
+                    <div class="card-body">
+                        <img src="Shetlandpony.jpg" class="card-img-start" style="width: 98%;">
+                        <p></p>
+                        <h4 class="card-title">Shetlandpony</h4>
+                        <p class="card-text">Shetlandponys sind kleine, robuste und widerstandsfähige Ponys, die
+                            ursprünglich von den Shetlandinseln in Schottland stammen. Sie besitzen einen kompakten,
+                            kräftigen Körperbau mit starken Beinen, harten Hufen und einem dichten Fell, das sie vor
+                            Kälte und schlechtem Wetter schützt. Trotz ihrer geringen Größe sind sie außergewöhnlich
+                            stark und belastbar. Charakterlich gelten Shetlandponys als intelligent, neugierig und
+                            selbstbewusst. Sie sind lernfähig, freundlich und oft sehr menschenbezogen, können aber auch
+                            einen eigenen Kopf haben und benötigen daher eine konsequente Erziehung. Aufgrund ihres
+                            ausgeglichenen Wesens und ihrer Zuverlässigkeit sind sie besonders bei Kindern beliebt.
+                            Shetlandponys eignen sich sowohl als Reit- und Fahrponys als auch für Freizeitaktivitäten.
+                            Durch ihre Anpassungsfähigkeit, ihre Langlebigkeit und ihren charmanten Charakter zählen sie
+                            zu den beliebtesten Ponyrassen der Welt.</p>
+                        <div class="flex-box">
+                            <small class="fg-3">16.10.2026</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </li>
+        <p></p>
+        <hr>
+        <div class="flex-box">
+            <footer>
+                <p></p>
+                <p>© 2026 by Nadine S.</p>
+            </footer>
+        </div>
+        <!-- <p></p>
+        <h3>Trakener</h3>
+        <div class="flex-box">
+            <img srcset="Trakener.jpg" class="picture">
+            <p>Trakehner sind elegante, leistungsbereite und sehr menschenbezogene Warmblutpferde. Sie zeichnen sich
+                durch
+                ihren edlen Körperbau, ihre ausdrucksvollen Bewegungen und ihre hohe Ausdauer aus. Ihr Charakter
+                gilt als
+                intelligent, sensibel und lernwillig, weshalb sie eine enge Bindung zu ihrem Reiter aufbauen.
+                Gleichzeitig
+                besitzen sie Temperament und einen starken Willen, was eine einfühlsame und konsequente Ausbildung
+                erfordert. Als älteste deutsche Reitpferderasse überzeugen Trakehner durch ihre Vielseitigkeit. Sie
+                werden
+                erfolgreich im Dressur-, Spring- und Vielseitigkeitssport eingesetzt. Dank ihrer
+                Leistungsbereitschaft,
+                Ausdauer und Eleganz eignen sie sich sowohl für den anspruchsvollen Turniersport als auch für
+                ambitionierte
+                Freizeitreiter. Ihre Kombination aus Athletik, Intelligenz und Treue macht sie zu einer der
+                angesehensten
+                Pferderassen der Welt.
+            </p>
+        </div>
+        <li class="item" id="oldenburger">
+            <h3>Oldenburger</h3>
+            <div class="flex-box flex-reverse">
+                <img srcset="Oldenburger.jpg" class="picture">
+                <p>Oldenburger sind elegante, kräftige und vielseitige deutsche Warmblutpferde. Sie besitzen einen
+                    harmonischen,
+                    athletischen Körperbau mit kräftiger Muskulatur, einen edlen Kopf und lange, leistungsfähige Beine.
+                    Die
+                    Rasse kommt in allen Grundfarben vor und vereint Kraft, Eleganz und Bewegungsqualität. Charakterlich
+                    gelten
+                    Oldenburger als ruhig, nervenstark, freundlich und menschenbezogen. Sie sind
+                    lernwillig, zuverlässig und arbeiten gerne mit ihrem Reiter zusammen. Durch ihr ausgeglichenes Wesen
+                    eignen
+                    sie sich sowohl für erfahrene Reiter als auch für ambitionierte Freizeitreiter. Besonders geschätzt
+                    werden
+                    ihre taktklaren, schwungvollen und ausdrucksstarken Bewegungen. Dadurch sind sie
+                    hervorragend für den Dressursport geeignet, überzeugen aber auch im Springen, in der Vielseitigkeit
+                    und im
+                    gehobenen Freizeitbereich. Dank ihrer Leistungsbereitschaft, ihres Talents und ihres ausgeglichenen
+                    Charakters gehören Oldenburger zu den erfolgreichsten und beliebtesten Sportpferderassen der Welt.
+                </p>
+            </div>
+        </li>
+        <li class="item" id="hannoveraner">
+            <h3>Hannoveraner</h3>
+            <div class="flex-box">
+                <img srcset="hanoverian.jpg" class="picture">
+                <p>Hannoveraner sind edle, athletische und leistungsstarke Warmblutpferde, die zu den bekanntesten
+                    Sportpferderassen der Welt gehören. Sie besitzen einen kräftigen, harmonischen Körperbau, einen
+                    trockenen
+                    und ausdrucksvollen Kopf, einen langen Hals sowie starke Beine. Besonders auffällig sind ihre
+                    schwungvollen,
+                    raumgreifenden und elastischen Bewegungen, die ihnen eine elegante Erscheinung verleihen.
+                    Im Charakter gelten Hannoveraner als freundlich, zuverlässig und nervenstark. Sie sind ausgeglichen,
+                    lernwillig und arbeiten motiviert mit ihrem Reiter zusammen. Durch ihr angenehmes Temperament eignen
+                    sie
+                    sich sowohl für den ambitionierten Turniersport als auch für engagierte Freizeitreiter.
+                    Dank ihrer hohen Leistungsbereitschaft, ihrer Athletik und ihrer vielseitigen Talente sind
+                    Hannoveraner
+                    besonders erfolgreich in der Dressur, im Springen und in der Vielseitigkeit. Ihre Kombination aus
+                    Kraft,
+                    Eleganz und Charakter macht sie zu einer der beliebtesten und erfolgreichsten Sportpferderassen
+                    weltweit.
+                </p>
+            </div>
+        </li>
+        <li class="item" id="deutsches_reitpony">
+            <h3>Deutsches Reitpony</h3>
+            <div class="flex-box flex-reverse">
+                <img srcset="Deutsches_Reitpony.jpg" class="picture">
+                <p>Deutsches Reitpony sind vielseitige, elegante und leistungsstarke Ponys, die speziell als Sport- und
+                    Freizeitpartner gezüchtet wurden. Sie besitzen einen harmonischen, sportlichen Körperbau mit edlem
+                    Kopf,
+                    langem Hals und gut bemuskeltem Rücken. Trotz ihrer Ponygröße wirken sie oft wie kleine
+                    Warmblutpferde und
+                    überzeugen durch ihre ansprechende Ausstrahlung. Charakterlich gelten Deutsche Reitponys als
+                    freundlich,
+                    intelligent und menschenbezogen. Sie sind lernwillig, zuverlässig und besitzen ein ausgeglichenes
+                    Temperament, wodurch sie besonders bei Kindern und Jugendlichen beliebt sind. Gleichzeitig zeigen
+                    sie viel
+                    Leistungsbereitschaft und Freude an der Arbeit. Durch ihre schwungvollen Bewegungen, ihre Athletik
+                    und ihre
+                    Vielseitigkeit eignen sich Deutsche Reitponys hervorragend für Dressur, Springen und Vielseitigkeit.
+                    Sie
+                    sind sowohl im Turniersport als auch im Freizeitbereich erfolgreiche und treue Partner. Ihre
+                    Kombination aus
+                    Eleganz, Leistungsfähigkeit und gutem Charakter macht sie zu einer der beliebtesten Ponyrassen
+                    Europas.
+                </p>
+            </div>
+        </li>
+        <li class="item" id="shetlandpony">
+            <h3>Shetlandpony</h3>
+            <div class="flex-box">
+                <img srcset="Shetlandpony.jpg" class="picture">
+                <p>Shetlandponys sind kleine, robuste und widerstandsfähige Ponys, die ursprünglich von den
+                    Shetlandinseln in
+                    Schottland stammen. Sie besitzen einen kompakten, kräftigen Körperbau mit starken Beinen, harten
+                    Hufen und
+                    einem dichten Fell, das sie vor Kälte und schlechtem Wetter schützt. Trotz ihrer geringen Größe sind
+                    sie
+                    außergewöhnlich stark und belastbar. Charakterlich gelten Shetlandponys als intelligent, neugierig
+                    und
+                    selbstbewusst. Sie sind lernfähig, freundlich und oft sehr menschenbezogen, können aber auch einen
+                    eigenen
+                    Kopf haben und benötigen daher eine konsequente Erziehung. Aufgrund ihres ausgeglichenen Wesens und
+                    ihrer
+                    Zuverlässigkeit sind sie besonders bei Kindern beliebt. Shetlandponys eignen sich sowohl als Reit-
+                    und
+                    Fahrponys als auch für Freizeitaktivitäten. Durch ihre Anpassungsfähigkeit, ihre Langlebigkeit und
+                    ihren
+                    charmanten Charakter zählen sie zu den beliebtesten Ponyrassen der Welt.
+                </p>
+            </div>
+        </li>
+        <li class="item" id="holsteiner">
+            <h3>Holsteiner</h3>
+            <div class="flex-box flex-reverse">
+                <img srcset="Hollsteiner.jpg" class="picture">
+                <p>Holsteiner sind elegante, leistungsstarke und vielseitige Warmblutpferde, die ursprünglich aus
+                    Schleswig-Holstein stammen. Sie besitzen einen kräftigen, harmonischen Körperbau mit edlem Kopf,
+                    langem Hals und einer gut ausgeprägten Muskulatur. Durch ihre Größe, ihre Ausstrahlung und ihre
+                    athletische Erscheinung zählen sie zu den bekanntesten Sportpferderassen der Welt. Charakterlich
+                    gelten Holsteiner als intelligent, mutig und zuverlässig. Sie sind leistungsbereit, lernfähig und
+                    zeigen eine enge Bindung zu ihren Reitern. Gleichzeitig verfügen sie über ein ausgeglichenes
+                    Temperament, das sie sowohl für ambitionierte Sportreiter als auch für erfahrene Freizeitreiter
+                    interessant macht. Besonders bekannt sind Holsteiner für ihre hervorragenden Fähigkeiten im
+                    Springsport, wo sie durch Kraft, Schnelligkeit und großes Sprungvermögen überzeugen. Auch in der
+                    Dressur und Vielseitigkeit erzielen sie regelmäßig erfolgreiche Ergebnisse. Ihre Kombination aus
+                    Stärke, Eleganz, Leistungsbereitschaft und gutem Charakter macht die Holsteiner zu einer der
+                    erfolgreichsten und beliebtesten Pferderassen im internationalen Reitsport.
+                </p>
+            </div>
+        </li>
+        <li class="item" id="friese">
+            <h3>Friese</h3>
+            <div class="flex-box">
+                <img srcset="Friese.jpeg" class="picture">
+                <p>Friesen sind elegante, kraftvolle und ausdrucksstarke Pferde, die ursprünglich aus der
+                    niederländischen Provinz Friesland stammen. Sie besitzen einen harmonischen Körperbau mit kräftiger
+                    Muskulatur, einem edlen Kopf und einer hoch getragenen, geschwungenen Halsung. Besonders auffällig
+                    sind ihre meist tiefschwarze Fellfarbe, die lange, wallende Mähne sowie der üppige Schweif und
+                    Behang an den Beinen. Charakterlich gelten Friesen als freundlich, menschenbezogen und zuverlässig.
+                    Sie sind lernwillig, aufmerksam und verfügen über ein ausgeglichenes Temperament, wodurch sie sowohl
+                    bei Freizeitreitern als auch im sportlichen Bereich geschätzt werden. Gleichzeitig zeigen sie eine
+                    hohe Arbeitsbereitschaft und eine enge Bindung zu ihrem Menschen. Durch ihre raumgreifenden,
+                    ausdrucksstarken Bewegungen eignen sich Friesen besonders für die Dressur, das Fahren und
+                    verschiedene Show- und Freizeitdisziplinen. Ihre Kombination aus Eleganz, Stärke und gutem Charakter
+                    macht sie zu einer der beliebtesten und beeindruckendsten Pferderassen Europas.
+                </p>
+            </div>
+        </li> -->
 </body>
 
 </html>

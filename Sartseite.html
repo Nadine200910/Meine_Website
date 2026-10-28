@@ -2,109 +2,245 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brandhof</title>
-    <link rel="stylesheet" href="index.css">
-    <script>
-        let eingabe = window.prompt("Gebe eine Zahl ein:");
-        let zahl = Number(eingabe);
-        parseInt(eingabe, 10)
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brandhof</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 
-        if (eingabe == zahl) {
-            while (zahl < 10) {
-                console.log(zahl)
-                zahl = zahl + 1
-            }
-        }
-        else {
-            console.log("Error")
-        }
-    </script>
+  <!-- <script>
+    let eingabe = window.prompt("Gebe eine Zahl bis 10 ein:");
+    let zahl = Number(eingabe);
+    parseInt(eingabe, 10)
+    if (eingabe == zahl) {
+      while (zahl < 10) {
+        console.log(zahl)
+        zahl = zahl + 1
+      }
+    }
+    else {
+      console.log("Error")
+    }
+  </script> -->
+  <style>
+    .close {
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: column;
+      align-items: flex-end;
+    }
 
+    button {
+      font-size: 190%;
+    }
+
+    .accordion-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
 </head>
 
-
 <body>
-    <nav class="navbar">
-
-        <ul class="nav-links">
-            <div class="überschrift">
-                <li><a href="Sartseite.html" class="active">Home</a></li>
-                <li><a href="ÜberUns.html">Über uns</a></li>
-                <li><a href="Pferde.html">Schulpferde</a></li>
-                <li><a href="Angebote.html">Was wir Anbieten</a></li>
-                <li><a href="Kontakte.html">Kontakte</a></li>
-                <li><a href="Sall.html">Unser Stall</a></li>
-                <li><a href="Rassen.html">Pferderassen</a></li>
-                <li><a href="Taschenrechner.html">Taschenrechner</a></li>
-            </div>
-        </ul>
-    </nav>
-    <main>
-
-        <article class="article">
+  <nav class="navbar">
+    <ul class="nav-links">
+      <div class="überschrift">
+        <span class="avatar">
+          <img class="avatar-img" src="logo.png">
+        </span>
+        <li><a href="Sartseite.html" class="active">jetzige Seite</a></li>
+        <li><a href="ÜberUns.html">Wir</a></li>
+        <li><a href="Pferde.html">Pferde</a></li>
+        <li><a href="Angebote.html">Angebote</a></li>
+        <li><a href="Kontakte.html">Kontakte</a></li>
+        <li><a href="Sall.html">Unser Stall</a></li>
+        <li><a href="Rassen.html">Rassen</a></li>
+        <li><a href="Grundwissen.html">Grndwissen</a></li>
+        <li><a href="Tunier.html">Tunier</a></li>
+          <li><a href="Reitabzeichen.html">Abzeichen</a></li>
+        <li><a href="Taschenrechner.html">Rechner</a></li>
+        <li><a href="Punkte.html">Punkte</a></li>
+        <li><a href="ToDoListe.html">To-Do</a></li>
+      </div>
+    </ul>
+  </nav>
+  <p></p>
+  <div class="flex-style">
+    <div class="card" style="max-width: 40%;">
+      <div class="card-body">
+        <img src="brandhof_luftbild_01.jpg" class="card-img">
+        <div class="flex-style">
+          <h3 class="mt-2 mb-0">Wir sind der Reit und Fahrverein Brandhof.</h3>
+          <p></p>
+          <p class="card-text fg-2">Wir liegen zwischen Elwangen und Aalen, bei Obergröningen. Unser Hof liegt
+            sehr
+            idyllisch, einen Kilometer von Obergröningen. Bei uns
+            können sie auch ihre Pferde unterstellen.Wenn Sie unseren Betrieb noch gar nicht kennen, und erst im
+            Internet
+            von uns erfahren
+            haben: Wir
+            würden uns
+            freuen, von Ihnen zu hören! Bitte lassen Sie uns Ihre Wünsche und Fragen wissen, gerne beraten
+            wir
+            Sie
+            ausführlich.In aller Kürze sollten Sie folgendes über uns wissen: Unser Unternehmen steht seit
+            2002 für
+            solide
+            Ausbildung
+            junger Pferde. Unsere besondere Kompetenz liegt im Bereich Anreiten von jungen Pferden und
+            Reitunterricht
+            für
+            Spät- und Wiedereinsteiger, ebenso im heilpädagogischen Reiten.</p>
+          <small class="fg-3">20.10.2026</small>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title"></h4>
+    </div>
+  </div>
+  <div class="flex-style">
+    <li class="card" style="width:40%;">
+      <div class="accordion accordion-sm" id="accordionExpandCollapse">
+        </details>
+        <details class="accordion-item" name="accordionExpandCollapse">
+          <summary class="accordion-header">
             <div class="flex-style">
-                <h1>Brandhof</h1>
+              <h3>Kommen sie vorbei</h3>
             </div>
+            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+              stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m2 5 6 6 6-6" />
+            </svg>
+          </summary>
+          <div class="accordion-body">
+            <strong>
+              <div class="accordion-body">
+                <strong>
+                  <div class="flex-style">
+                    <p class="card-text">Sie können jeder zeit für Reitstunden und fürs heilpädagogischen Reiten
+                      anmelden.
+                      Wir
+                      bieten Reitunterricht für Jung und Alt, Groß und Klein. Außerdem können sie auch immer vür
+                      Pensionspferde
+                      oder zur Pferdeausbildung von jung und älteren Pferden. WIr bilden bis zur klasse M/S aus und
+                      bereiten
+                      sie
+                      für Vorstellung auf Schauen, Turnieren, Zuchtstutenprüfungen usw. vor.</p>
+    <li>
+      <h4><a href="Kontakte.html">unsere Kontakte</a></h4>
+    </li>
+    <p></p>
+    <small class="fg-2">20.10.2026</small>
+  </div>
+  </div>
+  </details>
+  <details class="accordion-item" name="accordionExpandCollapse">
+    <summary class="accordion-header">
+      <div class="flex-style">
+        <h3>Unsere Schulpferde</h3>
+      </div>
+      <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m2 5 6 6 6-6" />
+      </svg>
+    </summary>
+    <div class="accordion-body">
+      <strong>
+        <div class="flex-style">
+          <p class="card-text">Wir haben acht sehr tolle Schulpferde die bei reitstunden je nach Können oder der Größe
+            nach oder dem
+            Gewicht nach verteilt werden. Man kan sich aber auch bei Reitstunden sein Schulpferd wünschen und wen es von
+            der
+            Verteilung von den anderen Reitschülern an diesem Tag her geht, bekommt man es auch. Meistens bekommt man
+            aber
+            auch die Schulpferde die man mag. Ich stelle auch manchmal zwei von meinen Eigenen privat Pferden vür
+            Reitschüler zur verfügung, aber für sie breucht man ein gewisses können da sie nicht so leicht sind so
+            zureiten
+            wie es bei mir Assiet.
+          </p>
+          <li>
+            <h4><a href="Pferde.html">unsere Schulpferde</a></h4>
+          </li>
+          <p></p>
+          <small class="fg-3">20.10.2026</small>
+        </div>
+    </div>
+  </details>
+  <details class="accordion-item" name="accordionExpandCollapse">
+    <summary class="accordion-header">
+      <div class="flex-style">
+        <h3>Unsere Angebote</h3>
+      </div>
+      <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m2 5 6 6 6-6" />
+      </svg>
+    </summary>
+    <div class="accordion-body">
+      <strong>
+        <div class="flex-style">
+          <p class="card-text">Wir bieten ganz verschiedene Angebote an. Sie können aber auch bei uns Fohlen, Jährlinge
+            und Pferde kaufen. Sie können auch unter Anja Rigger auf Ebay schauen welche Fohlen, Jährlinge und Pferde
+            wir
+            verkaufen.
+          </p>
+          <li>
+            <h4><a href="Angebote.html">unsere Angebote</a></h4>
+          </li>
+          <p></p>
+          <small class="fg-3">20.10.2026</small>
+        </div>
+    </div>
+  </details>
+  </div>
+  </li>
+  <p></p>
+  </div>
+  <div class="flex-style">
+    <button type="button" class="btn-solid theme-primary" commandfor="invokerDrawer" command="show-modal">
+      Anfahrt
+    </button>
+  </div>
+  <dialog class="drawer drawer-start" tabindex="-1" id="invokerDrawer" aria-labelledby="invokerDrawerLabel">
+    <div class="drawer-header">
+      <div class="close">
+        <button type="button" class="btn-close" commandfor="invokerDrawer" command="close" aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="drawer-body">
 
+      <h2>Anfahrtsweg</h2>
+      <h4>Hir finden sie den Anfahrts weg zu unserem Hof. Leider ist der Weg zu unserem Hof nicht so leichtzu finden
+        und
+        in Gschwend gibt es auch einen Brandhof. Achtung das ist der falsche Brandhof. Wenn sie hir auf Google map
+        gehen
+        finden sie uns direkt. Jedoch ist der weg zu uns ein bisschen verstekt, deswegen wundern sie sich nicht wenn
+        es
+        zuerst einbisschen komisch aussiet.</h4>
+      <h4>Brandhof 2, 73453 Obergröningen</h4>
+      <a href="https://www.google.com/maps/place/Riegger%2F+Weiss/@48.9093301,9.9044973,999m/data=!3m1!1e3!4m6!3m5!1s0x479901b2e7c86e3d:0xc2f62226a060b3c9!8m2!3d48.9112022!4d9.9037458!16s%2Fg%2F11bysjsv7n?entry=ttu&g_ep=EgoyMDI2MTAxNC4wIKXMDSoASAFQAw%3D%3D"
+        target="
+        _blank" rel="noopener noreferrer">
+        Auf Google Maps ansehen
+      </a>
 
-
-            <section>
-                <b>
-                    <p>
-                        Wir sind der Reit und Fahrverein Brandhof.
-                    </p>
-            </section>
-            <sektion>
-        </article>
-        <p>
-            Wir liegen zwischen Elwangen und Aalen, bei Obergröningen. Unser Hof liegt sehr
-            idyllisch, einen Kilometer von Obergröningen.
-        </p>
-        </sektion>
-        <section>
-            <p>
-                Wir bieten Reitstunden, Springstunden an. Bei uns können sie auch ihre Pferde unterstellen.
-            </p>
-        </section>
-        <section>
-            <p>
-                Neue Reitschüler nehmen wir ab einen alter von 6 Jahren.
-                Sie solten aber in der Lage sein zu Verstehen, wen man was zu ihnen sagt, dass sie es umsetzen
-                können.
-            </p>
-        </section>
-        <section>
-            <p>
-                Wenn Sie unseren Betrieb noch gar nicht kennen, und erst im Internet von uns erfahren haben: Wir
-                würden uns
-                freuen, von Ihnen zu hören! Bitte lassen Sie uns Ihre Wünsche und Fragen wissen, gerne beraten
-                wir
-                Sie
-                ausführlich.
-            </p>
-        </section>
-        <section>
-            <p>
-                In aller Kürze sollten Sie folgendes über uns wissen: Unser Unternehmen steht seit 2002 für
-                solide
-                Ausbildung
-                junger Pferde. Unsere besondere Kompetenz liegt im Bereich Anreiten von jungen Pferden und
-                Reitunterricht
-                für
-                Spät- und Wiedereinsteiger, ebenso im heilpädagogischen Reiten.
-            </p>
-
-        </section>
-        </b>
-        <img srcset="brandhof_luftbild_01.jpg" class="picture">
-
-
-        <hr>
-        <footer>
-            <p>© 2026 by Nadine S.</p>
-        </footer>
+      <div class="flex-style">
+        <small class="fg-3">20.10.2026</small>
+      </div>
+    </div>
+  </dialog>
+  </div>
+  <p></p>
+  <hr>
+  <div class="flex-style">
+    <footer>
+      <p></p>
+      <p>© 2026 by Nadine S.</p>
+    </footer>
+  </div>
 </body>
 
 </html>

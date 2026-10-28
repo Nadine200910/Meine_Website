@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grundwissen</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <style>
+        .picture {
+            width: 40%;
+            border-radius: 20px;
+        }
+
+        .picture5 {
+            width: 5%;
+            border-radius: 60%;
+        }
+
+        .picture6 {
+            width: 60%;
+            border-radius: 20px;
+        }
+
+        .picture7 {
+            width: 120px;
+            border-radius: 5px;
+
+        }
+
+        .picture8 {
+            width: 220px;
+            border-radius: 10px;
+        }
+
+        .picture9 {
+            width: 130px;
+            border-radius: 10px;
+
+        }
+
+        .picture10 {
+            width: 285px;
+            border-radius: 10px;
+        }
+
+
+        .btn-icon btn-sm {
+            font-size: 18px;
+        }
+
+        .d-flex {
+            width: 100%;
+            height: 100%;
+        }
+
+        .flex-box1 {
+            display: flex;
+        }
+
+        .flex-style2 {
+            width: 12%;
+            height: 110%;
+        }
+
+        .flex-style3 {
+            width: 30%;
+            height: 110%;
+        }
+
+        .bg-subtle-warning1 {
+            background-color: rgba(255, 162, 162, 0.822);
+        }
+
+        .bg-subtle-warning2 {
+            background-color: rgba(255, 214, 161, 0.822);
+        }
+
+        .bg-subtle-warning3 {
+            background-color: rgba(214, 202, 255, 0.822);
+        }
+
+        element.style {
+            max-width: 10400px;
+        }
+
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            padding: 10px;
+            font-size: 13pt;
+            width: 1090px;
+        }
+
+        li {
+            width: 115%;
+        }
+
+        .card {
+            width: 1030px;
+            height: 150px;
+        }
+
+        button {
+            font-size: 130%;
+        }
+
+        .anordnung {
+            display: flex;
+
+        }
+
+        .flex-style1 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: row;
+        }
+
+        img {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-links" style="width: 2030px;">
+            <div class="überschrift">
+                <li><a href="Sartseite.html" class="active">Home</a></li>
+                <li><a href="ÜberUns.html">Wir</a></li>
+                <li><a href="Pferde.html">Pferde</a></li>
+                <li><a href="Angebote.html">Angebote</a></li>
+                <li><a href="Kontakte.html">Kontakte</a></li>
+                <li><a href="Sall.html" style="width: 150px;">unser Stall</a></li>
+                <li><a href="Rassen.html">Rassen</a></li>
+                <li><a href="Grundwissen.html" style="width: 160px;">jetzige Seite</a></li>
+                <li><a href="Tunier.html">Tunier</a></li>
+                <li><a href="Reitabzeichen.html">Abzeichen</a></li>
+                <li><a href="Taschenrechner.html">Rechner</a></li>
+                <li><a href="Punkte.html">Punkte</a></li>
+                <li><a href="ToDoListe.html" style="width: 100px;">To-Do</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div id="carouselExampleContent" class="carousel slide">
+        <div class="carousel-inner rounded-5">
+            ' <div class="carousel-item active">
+                <div class="d-flex flex-column justify-content-center text-center bg-subtle-primary p-9 bg-1 rounded-5">
+                    <h1>Grundwissen/ Sachen über ein Pferd</h1>
+                    <p></p>
+                    <div class="flex-box">
+                        <img srcset="Fair-Game-old.jpg" class="picture">
+                    </div>
+                    <p></p>
+                    <div class="flex-box">
+                        <small class="fg-3">22.10.2026</small>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex flex-column justify-content-left text-left bg-subtle-success p-9 bg-2 rounded-5">
+                    <h3>Putzzeug</h3>
+                    <div class="flex-box1">
+                        <h3>Striegel:</h3>
+                    </div>
+                    <p>Entfernt groben Schmutz, Staub und lose Haare aus dem Fell. Wird in kreisenden Bewegungen
+                        verwendet.</p>
+                    <img srcset="Stiegel.png" class="picture5">
+                    <div class="flex-box1">
+                        <h3>Kardätsche:</h3>
+                    </div>
+                    <p>Eine weiche Bürste zum Entfernen von feinem Staub und für Glanz im Fell.</p>
+                    <img srcset="Kardätsche.jpg" class="picture5">
+                    <div class="flex-box1">
+                        <h3>Wurzelbürste:</h3>
+                    </div>
+                    <p>Eine harte Bürste für starke Verschmutzungen, besonders an den Beinen.</p>
+                    <img srcset="Würzelbürste.png" class="picture5">
+                    <div class="flex-box1">
+                        <h3>Hufkratzer:</h3>
+                    </div>
+                    <p>Reinigt die Hufe und entfernt Steine, Schmutz und Mist.</p>
+                    <img srcset="Hufeauskratzer.png" class="picture5">
+                    <div class="flex-box1">
+                        <h3>Mähnen- und Schweifbürste:</h3>
+                    </div>
+                    <p>Entwirrt Mähne und Schweif und hält sie gepflegt.</p>
+                    <img srcset="Mähnen-undSchweifbürste.png" class="picture5">
+                    <div class="flex-box">
+                        <small class="fg-3">22.10.2026</small>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex flex-column justify-content-center text-center bg-subtle-warning p-9 bg-1 rounded-5">
+                    <div class="flex-box">
+                        <img srcset="Pferdeskelett.png" class="picture6">
+                    </div>
+                    <p></p>
+                    <div class="flex-box">
+                        <small class="fg-3">22.10.2026</small>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex flex-column justify-content-center bg-subtle-warning2 p-9 bg-1 rounded-5">
+                    <h1>Pferde im Sport</h1>
+                    <div class="table-responsive">
+                        <p></p>
+                        <div class="flex-style">
+                            <div class="card card-row">
+                                <img src="Dressur2.jpg" class="picture9">
+                                <div class="card-body">
+                                    <h4 class="card-title">Dressur:</h4>
+                                    <p class="card-text">Bei der Dressur führen Pferd und Reiter verschiedene Übungen
+                                        auf
+                                        einem Viereck aus. Ziel ist
+                                        es,
+                                        dass das Pferd die Hilfen des Reiters genau versteht und elegante Bewegungen
+                                        zeigt.
+                                        Bewertet
+                                        werden unter anderem Haltung, Genauigkeit und Harmonie zwischen Pferd und
+                                        Reiter.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-style">
+                            <div class="card card-row">
+                                <img src="Springen.jpg" class="picture8">
+                                <div class="card-body">
+                                    <h4 class="card-title">Springreiten:</h4>
+                                    <p class="card-text">Beim Springreiten müssen Pferd und Reiter einen Parcours mit
+                                        Hindernissen überwinden.
+                                        Dazu
+                                        gehören verschiedene Sprünge wie Steilsprünge oder Oxer. Gewonnen hat meist das
+                                        Paar
+                                        mit
+                                        den
+                                        wenigsten Fehlerpunkten und der schnellsten Zeit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-style">
+                            <div class="card card-row">
+                                <img src="Voltischieren.jpg" class="picture9">
+                                <div class="card-body">
+                                    <h4 class="card-title">Voltigieren:</h4>
+                                    <p class="card-text">Voltigieren ist Turnen auf dem Pferd. Die Sportler führen
+                                        Übungen
+                                        und Akrobatik auf einem
+                                        Pferd aus, das an einer langen Leine im Kreis läuft. Dieser Sport fördert
+                                        Gleichgewicht,
+                                        Körperbeherrschung und Teamarbeit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-style">
+                            <div class="card card-row">
+                                <img src="Western.jpg" class="picture9">
+                                <div class="card-body">
+                                    <h4 class="card-title">Westernreiten:</h4>
+                                    <p class="card-text">Westernreiten stammt ursprünglich von den Cowboys in
+                                        Nordamerika.
+                                        Die Reiter nutzen spezielle
+                                        Sättel und reiten oft mit lockeren Zügeln. Bekannte Disziplinen sind Reining,
+                                        Trail
+                                        und
+                                        Barrel Racing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-style">
+                            <div class="card card-row">
+                                <img src="Vielseitigkeit.jpg" class="picture9">
+                                <div class="card-body">
+                                    <h4 class="card-title">Vielseitigkeitsreiten:</h4>
+                                    <p class="card-text">Diese Disziplin wird oft als „Triathlon des Reitsports"
+                                        bezeichnet.
+                                        Sie besteht aus drei
+                                        Teilen: Dressur, Geländeritt mit Hindernissen, Springreiten.
+                                        Hier werden Geschicklichkeit, Ausdauer und Mut von Pferd und Reiter geprüft.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-style">
+                            <div class="card card-row">
+                                <img src="Pferderennen.jpg" class="picture9">
+                                <div class="card-body">
+                                    <h4 class="card-title">Pferderennen:</h4>
+                                    <p class="card-text">Bei Pferderennen treten Pferde gegeneinander an und versuchen,
+                                        eine festgelegte Strecke
+                                        möglichst schnell zu laufen. Es gibt Galopp- und Trabrennen.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-style">
+                            <div class="card card-row">
+                                <img src="polo.jpg" class="picture8">
+                                <div class="card-body">
+                                    <h4 class="card-title">Polo:</h4>
+                                    <p class="card-text">Polo ist ein Mannschaftssport zu Pferd. Die Spieler
+                                        versuchen mit einem Schläger einen
+                                        Ball
+                                        in das Tor der gegnerischen Mannschaft zu schlagen. Es gilt als eine der
+                                        ältesten
+                                        Pferdesportarten der Welt.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
+                    <div class="flex-box">
+                        <small class="fg-3">22.10.2026</small>
+                    </div>
+                </div>
+            </div>'
+            <div class="carousel-item">
+                <div class="d-flex flex-column  text-center bg-subtle-warning3 p-9 bg-1 rounded-5">
+                    <h1>Haltungsformen</h1>
+                    <p></p>
+                    <div class="flex-style1">
+                        <div class="flex-style2">
+                            <ul class="list-group" style="width: 18rem;">
+                                <li class="list-group-item">
+                                    <h4>Boxenhaltung</h4>
+                                </li>
+                                <li class="list-group-item">
+                                    Das Pferd steht die meiste Zeit in einer Einzelbox.
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Vorteile:</h5>
+                                    <h6>Kontrolle über Futteraufnahme</h6>
+                                    <h6>Weniger Verletzungsrisiko durch andere Pferde</h6>
+                                    <h6>Gut für kranke Pferde oder Hengste</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Nachteile</h5>
+                                    <h6>Wenig Bewegung</h6>
+                                    <h6>Wenig Sozialkontakt</h6>
+                                    <h6>Kann zu Verhaltensproblemen führen (Weben, Koppen)</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Geeignet für:</h5>
+                                    <h6>Sportpferde mit viel täglichem Training</h6>
+                                    <h6>Pferde mit speziellen Bedürfnissen</h6>
+                                </li>
+                            </ul>
+                            <p></p>
+                            <div class="flex-style3">
+                                <img src="Boxenhaltung.jpg" class="picture10">
+                            </div class="flex-style2">
+                        </div>
+                        <div class="flex-style2">
+                            <ul class="list-group" style="width: 18rem;">
+                                <li class="list-group-item">
+                                    <h4>Paddockbox</h4>
+                                </li>
+                                <li class="list-group-item">
+                                    Die Box hat einen direkt angeschlossenen Auslauf.
+                                </li>
+                                <li class="list-group-item">
+                                    <h5> Vorteile:</h5>
+                                    <h6>Mehr Bewegung als reine Boxenhaltung</h6>
+                                    <h6>Frische Luft rund um die Uhr</h6>
+                                    <h6> Pferd kann selbst entscheiden, ob es drinnen oder draußen steht</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Nachteile:</h5>
+                                    <h6>Weniger Sozialkontakt als in einer Herde</h6>
+                                    <h6>Höhere Kosten</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Geeignet für:</h5>
+                                    <h6> Fast alle Pferde</h6>
+                                    <h6>Sport- und Freizeitpferde</h6>
+                                </li>
+                            </ul>
+                            <p></p>
+                            <div class="flex-style3">
+                                <img src="Padockbox.jpg" class="picture10">
+                            </div>
+                        </div>
+                        <div class="flex-style2">
+                            <ul class="list-group" style="width: 18rem;">
+                                <li class="list-group-item">
+                                    <h4>Offenstall</h4>
+                                </li>
+                                <li class="list-group-item">
+                                    Die Pferde leben in einer Gruppe und haben ständig Zugang zu einem Unterstand.
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Vorteile</h5>
+                                    <h6>Viel Bewegung</h6>
+                                    <h6>Ständiger Sozialkontakt</h6>
+                                    <h6>Sehr pferdegerecht</h6>
+                                    <h6>Gut für Muskeln und Gelenke</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Nachteile:</h5>
+                                    <h6>Rangordnungskämpfe möglich</h6>
+                                    <h6>Nicht jedes Pferd kommt mit jeder Herde klar</h6>
+                                    <h6>Fütterung muss gut organisiert sein</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5> Geeignet für:</h5>
+                                    <h6>Die meisten Freizeit- und Robustpferde</h6>
+                                    <h6>Viele Sportpferde</h6>
+                                </li>
+                            </ul>
+                            <div class="flex-style3">
+                                <img src="offenstall.jpg" class="picture10">
+                            </div>
+                        </div>
+                        <div class="flex-style2">
+                            <ul class="list-group" style="width: 18rem;">
+                                <li class="list-group-item">
+                                    <h4>Aktivstall</h4>
+                                </li>
+                                <li class="list-group-item">
+                                    Eine moderne Form des Offenstalls. Die Pferde müssen zwischen Futter-, Wasser- und
+                                    Ruhebereichen
+                                    laufen.
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Vorteile</h5>
+                                    <h6> Sehr viel Bewegung</h6>
+                                    <h6>Natürliche Lebensweise</h6>
+                                    <h6>Oft computergesteuerte Fütterung</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Nachteile</h5>
+                                    <h6> Teuer</h6>
+                                    <h6>Nicht für jedes Pferd geeignet</h6>
+                                    <h6>Eingewöhnung kann dauern</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Geeignet für:</h5>
+                                    <h6> Gesunde Pferde jeden Alters</h6>
+                                    <h6>Pferde, die viel Bewegung brauchen</h6>
+                                </li>
+                            </ul>
+                            <div class="flex-style3">
+                                <img src="Aktivstall.jpg" class="picture10">
+                            </div>
+                        </div>
+                        <div class="flex-style2">
+                            <ul class="list-group" style="width: 18rem;">
+                                <li class="list-group-item">
+                                    <h4>Laufstall</h4>
+                                </li>
+                                <li class="list-group-item">
+                                    Mehrere Pferde leben gemeinsam in einem größeren Stallbereich.
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Vorteile</h5>
+                                    <h6>Sozialkontakt</h6>
+                                    <h6>Mehr Bewegung als in der Box</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Nachteile</h5>
+                                    <h6> Weniger Platz als im Offenstall</h6>
+                                    <h6>Rangordnungsprobleme möglich</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5> Geeignet für:</h5>
+                                    <h6>Freizeitpferde</h6>
+                                    <h6>Jungpferde</h6>
+                                </li>
+                            </ul>
+                            <div class="flex-style3">
+                                <img src="Lauftall.jpg" class="picture10">
+                            </div>
+                        </div>
+                        <div class="flex-style2">
+                            <ul class="list-group" style="width: 18rem;">
+                                <li class="list-group-item">
+                                    <h4>Weidehaltung</h4>
+                                </li>
+                                <li class="list-group-item">
+                                    Pferde leben überwiegend oder ganzjährig auf einer Weide.
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Vorteile</h5>
+                                    <h6>Sehr natürliche Haltung</h6>
+                                    <h6>Viel Bewegung</h6>
+                                    <h6>Dauerhafter Sozialkontakt</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5> Nachteile</h5>
+                                    <h6>Gute Unterstände nötig
+                                        ZIm Winter aufwendiger
+                                        Nicht jedes Sportpferd bleibt im Training ausreichend bemuskelt</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Geeignet für:</h5>
+                                    <h6>
+                                        Robustpferde
+                                        Rentner
+                                        Jungpferde</h6>
+                                </li>
+                            </ul>
+                            <div class="flex-style3">
+                                <img src="Weidehaltung.jpg" class="picture10">
+                            </div>
+                        </div>
+                        <div class="flex-style2">
+                            <ul class="list-group" style="width: 18rem;">
+                                <li class="list-group-item">
+                                    <h4>Herdenhaltung</h4>
+                                </li>
+                                <li class="list-group-item">
+                                    Ganzjährige Außenhaltung mit Unterstand und Herde.
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Vorteile</h5>
+                                    <h6>Sehr naturnah
+                                        Geringe Stallkosten
+                                        Stärkt Gesundheit und Stoffwechsel
+                                    </h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Nachteile</h5>
+                                    <h6>Nicht jede Rasse ist dafür geeignet
+                                        Mehr Fellpflege im Winter
+                                        Gute Flächen und Schutzmöglichkeiten notwendig</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Geeignet für:</h5>
+                                    <h6>Islandpferde
+                                        Fjordpferde
+                                        Haflinger
+                                        Viele Ponyrassen</h6>
+                                </li>
+                            </ul>
+                            <div class="flex-style3">
+                                <img src="Herdenhaltung.jpg" class="picture10">
+                            </div>
+                        </div>
+                        <div class="flex-style2">
+                            <ul class="list-group" style="width: 18rem;">
+                                <li class="list-group-item">
+                                    <h4>Hengsthaltung</h4>
+                                </li>
+                                <li class="list-group-item">
+                                    Spezielle Haltung für Hengste, oft in Einzelboxen oder sorgfältig zusammengestellten
+                                    Gruppen.
+                                </li>
+                                <li class="list-group-item">
+                                    <h5> Vorteile</h5>
+                                    <h6> Sicherer Umgang
+                                        Vermeidung ungeplanter Bedeckungen</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5> Nachteile</h5>
+                                    <h6> Aufwendig
+                                        Weniger Sozialkontakt möglich</h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5>Geeignet für:</h5>
+                                    <h6> Hengste</h6>
+                                </li>
+                            </ul>
+                            <div class="flex-style3">
+                                <img src="Hengsthaltung.jpg" class="picture10">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-box">
+                        <small class="fg-3">22.10.2026</small>
+                    </div>
+                </div>
+            </diV>
+            <div class="carousel-item">
+                <div class="d-flex flex-column justify-content-center bg-subtle-warning1 p-9 bg-1 rounded-5">
+                    <h1>Was man für ein Pferd braucht + Preise</h1>
+                    <div class="table-responsive">
+                        <p></p>
+                        <div class="flex-style">
+                            <table class="table align-middle">
+                                <tbody>
+                                    <tr>
+                                        <td>Pferd</td>
+                                        <td>5.000 € bis ...</td>
+                                        <td>einmal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sattel</td>
+                                        <td>150 bis 10.000 €</td>
+                                        <td>einmal oder für jede Disziplin</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Schabracken</td>
+                                        <td>50 bis über 300 €</td>
+                                        <td>So viele wie man will</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sattelgurt</td>
+                                        <td>20 bis über 2000 €</td>
+                                        <td>Kommt auf die dicke des Pferdes an</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Steigbügel und Riemen pro Sattel</td>
+                                        <td>50 bis über 200 €</td>
+                                        <td>einmal pro Sattel</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trense</td>
+                                        <td>30 bis über 600 €</td>
+                                        <td>So viele wie man will</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gebiss </td>
+                                        <td>20 bis über 200 €</td>
+                                        <td>pro Trense</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Putzsachen</td>
+                                        <td>20 bis 60 €</td>
+                                        <td>einzelne sachen immer wieder erneuern</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Halfter</td>
+                                        <td>10 bis über 300 €</td>
+                                        <td>So viele wie man will</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Regendecke, Winterdecke, Abschwitzdeck</td>
+                                        <td>40 bis über 300 €</td>
+                                        <td>mehrere in verschiedene Stärken</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Stallmiete</td>
+                                        <td>150 bis über 1.000 €</td>
+                                        <td>pro Monat</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reitunterricht</td>
+                                        <td>25 bis 150 €</td>
+                                        <td>So oft man will</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hufschmied</td>
+                                        <td>30 bis 300 €</td>
+                                        <td>alle 6 bis 8 Wochen</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tierartzt</td>
+                                        <td>20 bis ... €</td>
+                                        <td>nur wen es krank ist</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Impfung</td>
+                                        <td>30 bis 250 €</td>
+                                        <td> einmal bis zweimal jährlich</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pferdehaftpflichtversicherung</td>
+                                        <td>80 bis 250 €</td>
+                                        <td>pro Jahr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reithelm</td>
+                                        <td>50 bis ... €</td>
+                                        <td>3 bis 5 Jahre, bei Sturz auf Kopf</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reitstiefel oder Stiefeletten</td>
+                                        <td>50 bis 400 €</td>
+                                        <td>bis kaputt oder zu klein</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reithanschuhe</td>
+                                        <td>10 bis 50 €</td>
+                                        <td>bis kaputt oder zu klein</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sicherheitsweste</td>
+                                        <td>50 bis über 300 €</td>
+                                        <td>bis zu klein ist oder bei Sturz</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ein Reitoutfit</td>
+                                        <td>170 bis über 1.500 €</td>
+                                        <td>mehrere</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="flex-box">
+                        <small class="fg-3">22.10.2026</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center gap-2">
+            <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselExampleContent" data-bs-slide="prev"
+                style="--bs-carousel-control-icon-width: 1rem;">
+                <span class="carousel-icon-prev" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselExampleContent" data-bs-slide="next"
+                style="--bs-carousel-control-icon-width: 1rem;">
+                <span class="carousel-icon-next" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="flex-style">
+        <button type="button" class="btn-solid theme-primary" commandfor="invokerDrawer" command="show-modal">
+            Bitte beachten
+        </button>
+    </div>
+    <dialog class="drawer drawer-start" tabindex="-1" id="invokerDrawer" aria-labelledby="invokerDrawerLabel">
+        <div class="drawer-header">
+            <div class="close">
+                <button type="button" class="btn-close" commandfor="invokerDrawer" command="close"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="drawer-body">
+            <h2>Wichtig</h2>
+            <p>Keine Angst sie müssen nicht alles haben oder wissen für ein eigenes Pferd. Die meiseten sachen kann man
+                sich nach und nach
+                kaufen. Manche braucht man aber von Anfang an. Zum Beispiel wenn sie sich ein Pferd im Sommer kaufen
+                wollen, dann brauchen sie auch noch keine Winterdecken. Aber sie solten einen Helm, irgendwelche
+                Reitschuhe, einen Sattel (den können sie meistens vom Vorbesitzer übernehmen), eine Trense, eine
+                Schabracke, Strick und Halfter, Putzsachen und eine freie Box für das Pferd. Am anfang brauchen sie
+                nicht mehr. Dafür sollten sie aber schauen das sie alles notwändige in den nächsten Tagen voll kaufen.
+            </p>
+            <p>Die ganzen Preise müssen auch nicht stimmen es gibt Sachen auch günstiger, aber auch viel teurer. Es gibt
+                die sachen aber auch in verschiedene ausführungen, das macht den preis auch nochmal ein Stück anderst.
+                Deswegen müssen nicht alle Breise stimmen aber so ca. stimmen sie schon.</p>
+            <p> Bitte beachten sie, das sie nicht die teuersten sachen brauchen sie können auch günstiger kaufen.</p>
+            <div class="flex-style">
+                <small class="fg-3">22.10.2026</small>
+            </div>
+        </div>
+    </dialog>
+    </div>
+    <p></p>
+    <hr>
+    <div class="flex-style">
+        <p></p>
+        <footer>
+            <p>© 2026 by Nadine S.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -6,20 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schulpferde</title>
     <link rel="stylesheet" href="index.css">
-    <script>
-        let zahl1 = 4556461;
-        const hallo = "Hallo und Herzlich Wilkommen";
-        var father = 7;
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script src="script.js" defer></script>
+    <!-- <script>
         let text1 = "Du hast Interesse an Pferden";
         let text2 = "Du hast keine Interesse an Pferden."
         let text3 = "Error."
 
-        console.log(hallo);
-        console.log(zahl1);
-        console.log(father)
-        let eingabewert = 'Ja';
-        let eingabewert2 = 'Nein';
-        let eingabe = window.prompt('Sind sie Pferde Interesiert?  Ja oder Nein', '');
+        let eingabewert = 'ja';
+        let eingabewert2 = 'nein';
+        let eingabe = window.prompt('Sind sie Pferde Interesiert?  ja oder nein', '');
 
 
         if (eingabe == eingabewert) {
@@ -31,143 +28,202 @@
         else {
             alert(text3)
         }
+    </script> -->
+    <style>
+        button {
+            font-size: 20px;
+        }
 
-    </script>
+        .card {
+            display: flex;
+            align-items: center;
+            max-width: 90%;
+            border-radius: 18px;
+            flex-direction: column;
+        }
+
+        input {
+            border-radius: 18px;
+        }
+
+        .card-body {
+            width: 90%;
+            border-radius: 18px;
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar">
-
         <ul class="nav-links">
             <div class="überschrift">
+                <span class="avatar">
+                    <img class="avatar-img" src="logo.png">
+                </span>
                 <li><a href="Sartseite.html" class="active">Home</a></li>
-                <li><a href="ÜberUns.html">Über uns</a></li>
-                <li><a href="Pferde.html">Schulpferde</a></li>
-                <li><a href="Angebote.html">Was wir Anbieten</a></li>
+                <li><a href="ÜberUns.html">Wir</a></li>
+                <li><a href="Pferde.html">jetzige Seite</a></li>
+                <li><a href="Angebote.html">Angebote</a></li>
                 <li><a href="Kontakte.html">Kontakte</a></li>
                 <li><a href="Sall.html">Unser Stall</a></li>
-                <li><a href="Rassen.html">Pferderassen</a></li>
-                <li><a href="Taschenrechner.html">Taschenrechner</a></li>
+                <li><a href="Rassen.html">Rassen</a></li>
+                <li><a href="Grundwissen.html">Grndwissen</a></li>
+                <li><a href="Tunier.html">Tunier</a></li>
+                  <li><a href="Reitabzeichen.html">Abzeichen</a></li>
+                <li><a href="Taschenrechner.html">Rechner</a></li>
+                <li><a href="Punkte.html">Punkte</a></li>
+                <li><a href="ToDoListe.html">To-Do</a></li>
             </div>
         </ul>
-
     </nav>
-    <h1>Schulpferde</h1>
-    <p>
-        Man kan auch, wenn wir wissen das ihr weit genug seit, mit dem Reiten, eine Reitbeteiligung auf den
-        Schulpferden
-        bekommen.
-        <br>
-        <br>
-        Sie laufen dennoch an den Tagen wo die Reitbeteiligungen nicht reiten im Schulbetrieb mit.
-        <br>
-        <br>
-        Mit der
-        Reitbeteiligungs ist gemeint, das man am Sonntag aleine in der Halle reiten kann und einmal bis zweimal die
-        Woche in Sculbetrieb mitreiten kann, man kann an Springstunden teilnehmen.das ist aner mit dem
-        richtigenkönnen
-        auch ohne reitbeteiligung möglich.
-
-    </p>
-
-    <div id="textmarker" class="pferde-border" ;>
-        <h3>Floh</h3>
-        <p>Floh ist hir das Anfänger pony. Sie ist sehr lieb, aber auch schon älter. Sie ist eine braune Stute, mit
-            schwarzer Mähne.
-            Hat schon eine Reitbeteiligung.</p>
-    </div>
-
-    <div id="textmarker1" class="pferde-border">
-        <h3>Gummibär</h3>
-        <p>Er ist ein brauner Wallach, er ist der Sohn von Floh. Daher ist er auch ein Pony und 16 Jahre alt.
-            Gummibär ist nicht immer braf und ist eher schneller unterwegs, ist aber alles händelbar.
-            Hat schon eine Reitbeteiligung.</p>
-    </div>
-
-    <div id="textmarker2" class="pferde-border">
-        <h3>Morgana</h3>
-        <p>Ist das letzte der drei Ponys, die kleinste im Bunde. Sie kann manchmal auf andere Pferde zurennen,
-            aber wir haben es ihr zimmlich gut abtainiert.
-            Hat schon eine Reitbeteiligung</p>
-    </div>
-
-    <div id="textmarker3" class="pferde-border">
-        <h3>Mary</h3>
-        <p>Sie ist die nächst großte. Es ist eine gefläckte Stute. Mary ist sehr Lieb. Leider hat sie das
-            Galoppieren
-            bisschen verlernt. Jedoch lernt sie es gerade stück für stück wieder. Sie ist sehr gut wieder dabei.
-            Hat schon eine Reitbeteiligung</p>
-    </div>
-
-    <div id="textmarker4" class="pferde-border">
-        <h3>Berkady</h3>
-        <p>Sie ist schon eine ältere Stute. Sie ist auch einfacher zu Reiten und eher ruig, langsamer unterwegs.
-            Hat schon eine Reitbeteiligung.</p>
-    </div>
-
-    <div id="textmarker5" class="pferde-border">
-        <h3>Benga</h3>
-        <p>Sie ist eine unserer zwei geschekte Kaltblut Stuten. Sie muss ein bisschen getrieben werden da sie nicht
-            immer so
-            motiviert ist. Am Ende hat sie dan trotzdem Spaß an der Arbeit</p>
-    </div>
-
-    <div id="textmarker6" class="pferde-border">
-        <h3>Mimi</h3>
-        <p>Mimi ist unsere Zweite Kaltblut Stute. Sie ist noch ziemlich neu und ein bisschen anhänglich an die
-            anderen
-            Pferde.</p>
-    </div>
-
-    <div id="textmarker7" class="pferde-border">
-        <h3>Ka</h3>
-        <p>Ka ist eine Der ältesten Pferde bei uns. Sie ist eine schimmel Stute. Sie ist aber immernoch flott
-            unterwegs.
-            Früher war sie ein Gelände Springpferd.</p>
-    </div>
-
-    <div id="textmarker8" class="pferde-border">
-        <b>
-            <p> Nun kommen die Pferde die eigentlich mir gehören und eher selden in der Reitstunde mitlaufen.</p>
-        </b>
-    </div>
-
-    <div id="textmarker9" class="pferde-border ">
-        <h3>Seaby</h3>
-        <p>Mit Seaby bin ich schon auf Tunier gewesen, bis zur Kl.S. Sie ist eine schecken Stute, die nun in Rente
-            ist
-            und
-            nicht mehr auf Tunier geht.</p>
-
-        <img srcset="Seaby.jpg" class="picture">
-
-    </div>
-
-    <div id="textmarker10" class="pferde-border">
-        <h3>Clowny</h3>
-        <p>Sie hatte ich eigentlich zum auf Tunier gehen, aber irgendwie ist sie zum Sculpferd geworden. Sie ist
-            auch
-            eine
-            schecken Stute. Clowny ist ein sehr empfindliches Pferd, deswegen dürfen sie nur die Fortgeschrittenen
-            reiten.
-        </p>
-      
+  <search class="search-container">
+        <form action="./search/"></form>
+        <input type="search" id="searchInput" placeholder="Nach Pferd suchen">
+        <button type="suchen" id="suchenButton">Suchen</button>
+    </search>
+    <ul id="itemList">
+    <div class="flex-style">
+        <div class="card card-body" style="max-width: 1040px;">
+            <h1>Schulpferde</h1>
+            <div class="eingabe-feld" style="max-width: 1040px;">
+                <p> Man kan auch, wenn wir wissen das ihr weit genug seit, mit dem Reiten, eine Reitbeteiligung auf den
+                    Schulpferden
+                    bekommen.
+                    <br>
+                    <br>
+                    Sie laufen dennoch an den Tagen wo die Reitbeteiligungen nicht reiten im Schulbetrieb mit.
+                    <br>
+                    <br>
+                    Mit der
+                    Reitbeteiligungs ist gemeint, das man am Sonntag aleine in der Halle reiten kann und einmal bis
+                    zweimal
+                    die
+                    Woche in Sculbetrieb mitreiten kann, man kann an Springstunden teilnehmen.das ist aner mit dem
+                    richtigenkönnen
+                    auch ohne reitbeteiligung möglich.
+                </p>
+            </div>
+            <small class="fg-3">19.10.2026</small>
+        </div>
+        <div class="card card-body" id="floh" style="max-width: 1040px;">
+            <h3>Floh</h3>
+            <p>Floh ist hir das Anfänger pony. Sie ist sehr lieb, aber auch schon älter. Sie ist eine braune
+                Stute,
+                mit
+                schwarzer Mähne.
+                Hat schon eine Reitbeteiligung.</p>
+            <small class="fg-3">19.10.2026</small>
+        </div>
+        <div class="card card-body" id="gummibär" style="max-width: 1040px;">
+            <h3>Gummibär</h3>
+            <p>Er ist ein brauner Wallach, er ist der Sohn von Floh. Daher ist er auch ein Pony und 16 Jahre
+                alt.
+                Gummibär ist nicht immer braf und ist eher schneller unterwegs, ist aber alles händelbar.
+                Hat schon eine Reitbeteiligung.</p>
+            <small class="fg-3">19.10.2026</small>
+        </div>
+        <div class="card card-body" id="morgana" style="max-width: 1040px;">
+            <h3>Morgana</h3>
+            <p>Ist das letzte der drei Ponys, die kleinste im Bunde. Sie kann manchmal auf andere Pferde
+                zurennen,
+                aber wir haben es ihr zimmlich gut abtainiert.
+                Hat schon eine Reitbeteiligung</p>
+            <small class="fg-3">19.10.2026</small>
+        </div>
+        <div class="card card-body" id="mary" style="max-width: 1040px;">
+            <h3>Mary</h3>
+            <p>Sie ist die nächst großte. Es ist eine gefläckte Stute. Mary ist sehr Lieb. Leider hat sie
+                das
+                Galoppieren
+                bisschen verlernt. Jedoch lernt sie es gerade stück für stück wieder. Sie ist sehr gut
+                wieder
+                dabei.
+                Hat schon eine Reitbeteiligung</p>
+            <small class="fg-3">19.10.2026</small>
+        </div>
+        <div class="card card-body" id="berkady" style="max-width: 1040px;">
+            <h3>Berkady</h3>
+            <p>Sie ist schon eine ältere Stute. Sie ist auch einfacher zu Reiten und eher ruig, langsamer
+                unterwegs.
+                Hat schon eine Reitbeteiligung.</p>
+            <small class="fg-3">19.10.2026</small>
+        </div>
+        <div class="card card-body" id="benga" style="max-width: 1040px;">
+            <h3>Benga</h3>
+            <p>Sie ist eine unserer zwei geschekte Kaltblut Stuten. Sie muss ein bisschen getrieben werden
+                da
+                sie
+                nicht
+                immer so
+                motiviert ist. Am Ende hat sie dan trotzdem Spaß an der Arbeit</p>
+            <small class="fg-3">19.10.2026</small>
+        </div>
+        <div class="card card-body" id="mimi" style="max-width: 1040px;">
+            <h3>Mimi</h3>
+            <p>Mimi ist unsere Zweite Kaltblut Stute. Sie ist noch ziemlich neu und ein bisschen anhänglich
+                an
+                die
+                anderen
+                Pferde.</p>
+            <small class="fg-3">19.10.2026</small>
+        </div>
+        <div class="card card-body" id="ka" style="max-width: 1040px;">
+            <h3>Ka</h3>
+            <p>Ka ist eine Der ältesten Pferde bei uns. Sie ist eine schimmel Stute. Sie ist aber immernoch
+                flott
+                unterwegs.
+                Früher war sie ein Gelände Springpferd.</p>
+            <small class="fg-3">19.10.2026</small>
+        </div>
+        <div class="card card-body">
+            <b>
+                <p> Nun kommen die Pferde die eigentlich mir gehören und eher selden in der Reitstunde mitlaufen.
+                </p>
+            </b>
+        </div>
+        <div class="card card-body" id="seaby" style="max-width: 1040px;">
+            <h3>Seaby</h3>
+            <p>Mit Seaby bin ich schon auf Tunier gewesen, bis zur Kl.S. Sie ist eine schecken Stute, die
+                nun in
+                Rente
+                ist
+                und
+                nicht mehr auf Tunier geht.</p>
+            <img srcset="Seaby.jpg" class="picture">
+            <p></p>
+            <small class="fg-3">19.10.2026</small>
+        </div>
+        <div class="card card-body" id="clowny" style="max-width: 1040px;">
+            <h3>Clowny</h3>
+            <p>Sie hatte ich eigentlich zum auf Tunier gehen, aber irgendwie ist sie zum Sculpferd geworden.
+                Sie
+                ist
+                auch
+                eine
+                schecken Stute. Clowny ist ein sehr empfindliches Pferd, deswegen dürfen sie nur die
+                Fortgeschrittenen
+                reiten.
+            </p>
             <img srcset="Clowni.jpg" class="picture">
-       
+            <p></p>
+            <small class="fg-3">19.10.2026</small>
+        </div>
+        <div class="card card-body" id="quanti" style="max-width: 1040px;">
+            <h3>Quanti</h3>
+            <p>Sie wird in den nechsten Tagen verkauft und sie war erst 2 Monate hir und hat blos einen
+                Monat als Schulpferd gearbeitet.</p>
+            <small class="fg-3">19.10.2026</small>
+        </div>
     </div>
-
-    <div id="textmarker11" class="pferde-border">
-        <h3>Quanti</h3>
-        <p>Sie wird in den nechsten Tagen verkauft und sie war erst 2 Monate hir und hat blos einen Monat als
-            Schulpferd
-            gearbeitet.</p>
-    </div>
-
+    </ul>
     <p></p>
     <hr>
-    <footer>
-        <p>© 2026 by Nadine S.</p>
-    </footer>
+    <div class="flex-box">
+        <footer>
+            <p></p>
+            <p>© 2026 by Nadine S.</p>
+        </footer>
+    </div>
+    </div>
 </body>
-
 </html>
