@@ -60,16 +60,17 @@
                 <li><a href="Rassen.html">jetzige Seite</a></li>
                 <li><a href="Grundwissen.html">Grndwissen</a></li>
                 <li><a href="Tunier.html">Tunier</a></li>
-                  <li><a href="Reitabzeichen.html">Abzeichen</a></li>
+                <li><a href="Reitabzeichen.html">Abzeichen</a></li>
                 <li><a href="Taschenrechner.html">Rechner</a></li>
                 <li><a href="Punkte.html">Punkte</a></li>
                 <li><a href="ToDoListe.html">To-Do</a></li>
             </div>
         </ul>
     </nav>
-     <form action="./search/"></form>
+    <search class="search-container">
+        <form action="./search/"></form>
         <input type="search" id="searchInput" placeholder="Nach Pferd suchen">
-        <button type="suchen" id="suchenButton">Suchen</button>
+        <button type="button" id="suchenButtonRassen" onclick="rasseSuchen()">Suchen</button>
     </search>
     <ul id="itemList">
         <div class="card card-body" style="max-width: 42%;">

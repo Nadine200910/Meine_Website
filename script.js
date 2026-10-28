@@ -1,7 +1,10 @@
 const searchInput = document.getElementById("searchInput");
-const suchenButton = document.getElementById("suchenButton");
-
-    suchenButton.addEventListener("click", () => {
+const suchenButtonPferde = document.getElementById("suchenButtonPferde");
+const suchenButtonRassen = document.getElementById("suchenButtonRassen");
+const suchenButtonAbzeichen = document.getElementById("suchenButtonAbzeichen");
+const suchenButtonTurnier = document.getElementById("suchenButtonTurnier");
+function pferdSuchen() {
+    suchenButtonPferde.addEventListener("click", () => {
         const suchbegriff = searchInput.value.trim().toLowerCase();
         switch (suchbegriff) {
             // Schulpferde
@@ -18,7 +21,13 @@ const suchenButton = document.getElementById("suchenButton");
             case "quanti":
                 document.getElementById(suchbegriff).scrollIntoView();
                 break;
-        } switch (suchbegriff) {
+        }
+    });
+}
+function rasseSuchen() {
+    suchenButtonRassen.addEventListener("click", () => {
+        const suchbegriff = searchInput.value.trim().toLowerCase();
+        switch (suchbegriff) {
             // Rassen
             case "trakener":
             case "oldenburger":
@@ -29,7 +38,14 @@ const suchenButton = document.getElementById("suchenButton");
             case "friese":
                 document.getElementById(suchbegriff).scrollIntoView();
                 break;
-        }       switch (suchbegriff) {
+        }
+    });
+
+}
+function abzeichenSuchen() {
+    suchenButtonAbzeichen.addEventListener("click", () => {
+        const suchbegriff = searchInput.value.trim().toLowerCase();
+        switch (suchbegriff) {
             // Abzeichen
             case "ra10":
             case "ra9":
@@ -43,7 +59,13 @@ const suchenButton = document.getElementById("suchenButton");
             case "ra1":
                 document.getElementById(suchbegriff).scrollIntoView();
                 break;
-        }    switch (suchbegriff) {
+        }
+    });
+}
+function tunierSuchen() {
+    suchenButtonTurnier.addEventListener("click", () => {
+        const suchbegriff = searchInput.value.trim().toLowerCase();
+        switch (suchbegriff) {
             // Tunier
             case "tunierkleidung":
             case "ausrüstung":
@@ -51,7 +73,6 @@ const suchenButton = document.getElementById("suchenButton");
             case "dressur":
                 document.getElementById(suchbegriff).scrollIntoView();
                 break;
-        } 
+        }
     });
-
-    
+}
