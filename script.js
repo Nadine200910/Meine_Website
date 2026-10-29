@@ -76,3 +76,12 @@ function tunierSuchen() {
         }
     });
 }
+
+//Arrays
+let pferde = ["Die Rassen die ich ihnen vorstelle:", "Trakener", "Oldenburger", "Hannoveraner", "Holsteiner", "Friese", "Deutsches Reitpony", "Shetlandpony"];
+let liste = document.getElementById("itemList1");
+for (let i = 0; i < pferde.length; i++) {
+    let li = document.createElement("li");
+    li.textContent = pferde[i];
+    liste.appendChild(li);
+}
