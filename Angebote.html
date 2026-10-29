@@ -6,88 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angebote</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <style>
+        img {
+            margin: 2px;
+            max-width: 130%;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            max-width: 35%;
+            border-radius: 18px;
+            flex-direction: row;
+        }
+
+    </style>
 </head>
 
 <body>
     <nav class="navbar">
-
         <ul class="nav-links">
             <div class="überschrift">
+                <span class="avatar">
+                    <img class="avatar-img" src="logo.png">
+                </span>
                 <li><a href="Sartseite.html" class="active">Home</a></li>
-                <li><a href="ÜberUns.html">Über uns</a></li>
-                <li><a href="Pferde.html">Schulpferde</a></li>
-                <li><a href="Angebote.html">Was wir Anbieten</a></li>
+                <li><a href="ÜberUns.html">Wir</a></li>
+                <li><a href="Pferde.html">Pferde</a></li>
+                <li><a href="Angebote.html">jetzige Seite</a></li>
                 <li><a href="Kontakte.html">Kontakte</a></li>
                 <li><a href="Sall.html">Unser Stall</a></li>
-                <li><a href="Rassen.html">Pferderassen</a></li>
-                <li><a href="Taschenrechner.html">Taschenrechner</a></li>
+                <li><a href="Rassen.html">Rassen</a></li>
+                <li><a href="Grundwissen.html">Grndwissen</a></li>
+                <li><a href="Tunier.html">Tunier</a></li>
+                <li><a href="Taschenrechner.html">Rechner</a></li>
+                <li><a href="Punkte.html">Punkte</a></li>
+                <li><a href="ToDoListe.html">To-Do</a></li>
             </div>
         </ul>
-
     </nav>
-    <h1>Wir bieten an</h1>
-
-    <div class="flex-style">
-        <table>
-            <tr>
-                <th scope="row">
-                <td>Anreiten junger Pferde</td>
-                </th>
-            </tr>
-            <tr>
-                <th scope="row">
-                <td>Beritt</td>
-                </th>
-            </tr>
-            <tr>
-                <th scope="row">
-                <td>Korrektur</td>
-                </th>
-            </tr>
-            <tr>
-                <th scope="row">
-                <td>Ausbildung in Dressur bis Klasse M / S</td>
-                </th>
-            </tr>
-            <tr>
-                <th scope="row">
-                <td>Pensionspferdehaltung</td>
-                </th>
-            </tr>
-            <tr>
-                <th scope="row">
-                <td>Reitunterricht für Jung und Alt, Groß und Klein</td>
-                </th>
-            </tr>
-            <tr>
-                <th scope="row">
-                <td>Vorbereitung und Vorstellung auf Schauen, Turnieren, Zuchtstutenprüfungen usw.</td>
-                </th>
-            </tr>
-            <tr>
-                <th scope="row">
-                <td>Zucht und Aufzucht</td>
-                </th>
-            </tr>
-            <tr>
-                <th scope="row">
-                <td>Verkauf</td>
-                </th>
-            </tr>
-                <div>
-
-                    <img srcset="Zucht2.jpg" class="picture1">
-                    <img  srcset="Zucht3.jpg" class="picture1">
-
-                </div>
-        </table>
-    </div>
-
     <p></p>
-    <hr>
-    <footer>
-        <p>© 2026 by Nadine S.</p>
-    </footer>
+    <div class="flex-style">
+        <div class="card card-row" style="max-width: 1040px;">
+            <div class="flex-style" style="height: 540px;">
+                <img srcset="Zucht2.jpg" class="picture1">
+                <img srcset="Zucht3.jpg" class="picture1">
+            </div>
+
+            <div class="card-body">
+                <h1 class="card-title">Wir bieten an</h1>
+                <p class="card-text">
+                <div class="flex-style">
+                    <table>
+                        <tr>
+                            <th scope="row">
+                            <td>Anreiten junger Pferde</td>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                            <td>Beritt</td>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                            <td>Korrektur</td>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                            <td>Ausbildung in Dressur bis Klasse M / S</td>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                            <td>Pensionspferdehaltung</td>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                            <td>Reitunterricht für Jung und Alt, Groß und Klein</td>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                            <td>Vorbereitung und Vorstellung auf Schauen, Turnieren, Zuchtstutenprüfungen usw.</td>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                            <td>Zucht und Aufzucht</td>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                            <td>Verkauf</td>
+                            </th>
+                        </tr>
+
+                    </table>
+                </div>
+                </p>
+                <small class="fg-2">19.10.2026</small>
+            </div>
+        </div>
+    </div>
+    <h1></h1>
+    </div>
+    <div class="flex-style">
+        <p></p>
+        <hr>
+        <footer>
+            <p></p>
+            <p>© 2026 by Nadine S.</p>
+        </footer>
+    </div>
 </body>
 
 </html>
