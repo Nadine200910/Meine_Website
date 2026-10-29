@@ -129,11 +129,18 @@ for (let i = 0; i < pferde.length; i++) {
     let li = document.createElement("li");
 
     li.innerHTML = `
-        <h3>${pferde.name}</h3>
-        <p><strong>Herkunft:</strong> ${pferde.herkunft}</p>
-        <p><strong>Größe:</strong> ${pferde.grösse}</p>
-        <p><strong>Verwendung:</strong> ${pferde.verwendung}</p>
+        <h3>${pferde[i].name}</h3>
+        <p><strong>Herkunft:</strong> ${pferde[i].herkunft}</p>
+        <p><strong>Größe:</strong> ${pferde[i].grösse}</p>
+        <p><strong>Verwendung:</strong> ${pferde[i].verwendung}</p>
     `;
 
     liste.appendChild(li);
 }
+fetch(file)
+  .then(function(response) {
+     return response.text();
+  })
+  .then(function(data) {
+    myDisplayer(data);
+  });
