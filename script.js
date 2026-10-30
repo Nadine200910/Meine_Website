@@ -135,12 +135,5 @@ for (let i = 0; i < pferde.length; i++) {
         <p><strong>Verwendung:</strong> ${pferde[i].verwendung}</p>
     `;
 
-    liste.appendChild(li);
+  liste.appendChild(li);
 }
-fetch(file)
-  .then(function(response) {
-     return response.text();
-  })
-  .then(function(data) {
-    myDisplayer(data);
-  });

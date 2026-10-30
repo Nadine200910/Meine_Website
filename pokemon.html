@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="Pokemon.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+    <style>
+        button {
+            font-size: 23px;
+            height: 50px;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        form {
+            display: flex;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .reihe {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        small {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            font-size: 27px;
+            border-radius: 18px;
+        }
+
+        .card {
+            border-radius: 15px;
+            position: relative;
+            background-color: #bbd9ff;
+            width: 350px;
+            height: 650px;
+        }
+
+        .card-body {
+            width: 286px;
+        }
+
+        h3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .neon-text {
+
+            font-size: 4rem;
+            color: #000000;
+            text-align: center;
+            margin-top: 0;
+            text-shadow: 0 0 5px #2263ad, 0 0 10px #1d508a, 0 0 20px #5ba6fc,
+                0 0 30px #3b7eca, 0 0 40px #2b6bb4, 0 0 50px #5ba6fc, 0 0 60px #5ba6fc;
+            animation: glow 1.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <div class="überschrift">
+                <span class="avatar">
+                    <img class="avatar-img" src="logo.png">
+                </span>
+                <li><a href="Sartseite.html" class="active">Startseite</a></li>
+                <li><a href="ÜberUns.html">Wir</a></li>
+                <li><a href="Pferde.html">Pferde</a></li>
+                <li><a href="Angebote.html">Angebote</a></li>
+                <li><a href="Kontakte.html">Kontakte</a></li>
+                <li><a href="Sall.html">Unser Stall</a></li>
+                <li><a href="Rassen.html">Rassen</a></li>
+                <li><a href="Grundwissen.html">Grndwissen</a></li>
+                <li><a href="Tunier.html">Tunier</a></li>
+                <li><a href="Reitabzeichen.html">Abzeichen</a></li>
+                <li><a href="Taschenrechner.html">Rechner</a></li>
+                <li><a href="Punkte.html">Punkte</a></li>
+                <li><a href="ToDoListe.html">To-Do</a></li>
+                <li><a href="pokemon.html">jetzige Seite</a></li>
+            </div>
+        </ul>
+    </nav>
+    <p></p>
+    <h1>Pokemon</h1>
+    <p></p>
+    <main>
+        <form>
+            <input id="pokemonName" required></input>
+            <button type="button" onclick="getData()">Suchen</button>
+        </form>
+        <p></p>
+        <p></p>
+        </div class="pokemon-card">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <img class="card-img" id="pokemon-image">
+                <div class="reihe">
+
+                    <h3 class="neon-text" id="pokemon-name"></h3>
+                </div>
+                <div class="reihe">
+                    <p></p>
+                    <h4 id="pokemon-id"></h4>
+                </div>
+                <div class="reihe">
+
+                    <p id="types"></p>
+                </div>
+                <div class="reihe">
+                    <p id="height"></p>
+                </div>
+                <div class="reihe">
+                    <p id="weight"></p>
+                </div>
+                <small class="fg-3">30.10.2026</small>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
